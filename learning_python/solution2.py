@@ -8,5 +8,14 @@
  #i+=1  
 
 #range
-for i in range(100,0,-1):
-    print(i)
+#for i in range(100,0,-1):
+ #   print(i)
+
+#WAF TO CONVERT USD TO INR.
+
+def converter(usd_val):
+   inr_val = usd_val * 96
+   print(usd_val, "USD =", inr_val, "INR")
+
+
+converter(100)
