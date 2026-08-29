@@ -21,4 +21,5 @@ class account:
 acc1 = account(1000, 123456789)
 acc1.debit (500)
 acc1.credit(300)
-acc1.debit(5000)                
+acc1.debit(5000) 
+acc1.credit(900000)               
