@@ -1,0 +1,10 @@
+class persons:
+    __name = "anonymous"
+
+    def __hello(self):
+        print("hello person!")
+    def welcome(self):
+        self.__hello()
+p1 = persons()
+
+print(p1.welcome())
