@@ -20,3 +20,6 @@ class fortuner(toyota):
 
 car1 = fortuner("diesel")
 car1.start()         
+
+
+
