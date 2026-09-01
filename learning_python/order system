@@ -1,0 +1,17 @@
+# create a class called order which stores item & its price.
+# use dunder funtion..gt..() to convey that:
+# order1> order2 if price of order1>price of order2
+
+class order:
+    def __init__(self, item , price):
+        self.item = item
+        self.price = price
+
+    def __gt__(self, odr2):
+        return self.price > odr2.price
+
+
+odr1 =  order("milshake", 160)
+ord2 = order("coffee", 159)
+
+print( odr1 > ord2)
