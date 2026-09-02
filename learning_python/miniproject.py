@@ -1,12 +1,18 @@
 import random
 
-target = random.randint(1, 99)
+target = random.randint(1, 100)
 
 while True:
-    userchoice = int(input("Guess the target:"))
-    if(userchoice == target):
-        print("succes : correct guess!!")
+    userchoice = input("Guess the target or quite:")
+
+    if(userchoice == "Q"):
+       
         break
+    userchoice = int(userchoice)
+    if(userchoice == target):
+        print("success : correct Guess!")
+        break
+
     elif(userchoice < target):
         print("your number was too small. Take a bigger guess..")
     else:
