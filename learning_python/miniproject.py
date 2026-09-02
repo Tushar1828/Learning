@@ -1,11 +1,11 @@
 import random
 
-target = random.randint(1, 100)
+target = random.randint(1, 10)
 
 while True:
     userchoice = input("Guess the target or quite:")
 
-    if(userchoice == "Q"):
+    if(userchoice == "Quite"):
        
         break
     userchoice = int(userchoice)
