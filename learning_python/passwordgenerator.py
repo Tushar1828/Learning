@@ -2,9 +2,12 @@
 import random
 import string
 
-print(string.ascii_letters)
-print(string.digits)
-print(string.punctuation)
+pass_len = 8
+charvalues = string.ascii_letters + string.digits + string.punctuation
+password = ""
+for i in range(pass_len):
+    password += random.choice(charvalues)
 
-# val = random.choice(['a', 'b','c'])
-# print(val)
+print("your random password is: ",password)
+
+
