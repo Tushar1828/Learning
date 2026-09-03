@@ -2,7 +2,7 @@
 import random
 import string
 
-pass_len = 8
+pass_len = 100
 charvalues = string.ascii_letters + string.digits + string.punctuation
 
 password = "".join([random.choice(charvalues)for i in range(pass_len)])
