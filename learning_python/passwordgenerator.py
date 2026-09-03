@@ -3,5 +3,8 @@ import random
 import string
 
 print(string.ascii_letters)
-val = random.choice(['a', 'b','c'])
-print(val)
+print(string.digits)
+print(string.punctuation)
+
+# val = random.choice(['a', 'b','c'])
+# print(val)
