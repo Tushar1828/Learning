@@ -14,8 +14,13 @@ class calculator:
     def squareroot(self):
         print(f"the squareroot is  {self.n**1/2}")
 
+    @staticmethod
+    def Hey():
+        print("Hey Buddy!")
+    
 
 a = calculator(5)
+a.Hey()
 a.square ()
 a.cube()
 a.squareroot()
