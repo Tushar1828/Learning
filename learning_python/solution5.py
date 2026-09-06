@@ -28,17 +28,23 @@
 #write a class train which has method to book,
 #get status and get fare inforamtion of train running underinidian railways.
 
+from random import randint
+
 class Train:
 
     def __init__(self, trainNo):
-        self.tarinNo = trainNo
-    def book(self):
-        pass
+        self.trainNo = trainNo
 
-    def getstatus(self, trainNo):
-        pass
+    def book(self, fro, to):
+        print(f"Ticket is booked in train no: {self.trainNo} from {fro} to {to}")
 
-    def getFare(self):
-        print(f"Ticket fare in train no: {self.trainNo} from {fro}to {to} is
-              {randit(22, 5555)}")
+    def getstatus(self):
+        print(f"Train no: {self.trainNo} is running on time ")
 
+    def getFare(self, fro, to):
+        print(f"Ticket fare in train no: {self.trainNo} from {fro}to {to} is{randint(22, 5555)}")
+
+t = Train(12806)
+t.book("Ranchi", "Delhi")
+t.getstatus()
+t.getFare("Ranchi", "Delhi")
