@@ -11,8 +11,15 @@
 #WAP TO PRINT THIRD,FIFTH AND SEVENTH ELEMENT FROM A LIST
 #USING ENUMERATE FUNCTION.
 
-l = [1, 2, 3, 4, 5, 6, 7, 8]
+# l = [1, 2, 3, 4, 5, 6, 7, 8]
 
-for i, item in enumerate(l):
-    if i== 2 or i == 5 or i == 7:
-        print(item)
+# for i, item in enumerate(l):
+#     if i== 2 or i == 5 or i == 7:
+#         print(item)
+
+#MULTIPLICATIONS
+
+n = int(input("Enter a number:"))
+
+table = [n*i for i in range(1, 11)]
+print(table)
