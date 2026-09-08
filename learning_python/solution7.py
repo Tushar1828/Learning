@@ -19,7 +19,17 @@
 
 #MULTIPLICATIONS
 
-n = int(input("Enter a number:"))
+# n = int(input("Enter a number:"))
 
-table = [n*i for i in range(1, 11)]
-print(table)
+# table = [n*i for i in range(1, 11)]
+# print(table) 
+
+#WAP TO DISPLAY A/B WHERE A AND B ARE INTEGERS.
+#IF B=0, DISPLAY INFINITE BY HANDLING THE'ZERODIVISIONERROR'.
+
+try:
+    a = int(input("Enter a: "))
+    b = int(input("Enter b: "))
+    print(a/b)
+except ZeroDivisionError as v:
+    print("Infinite")    
