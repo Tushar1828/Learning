@@ -23,8 +23,17 @@
 
 #WRITE A RECURSIVE FUNCTION TO  CALCULATE THE SUM OF FIRST N NATURAL NUMBERS.
 
-def sum(n):
-    if(n==1):
-        return 1
-    return sum(n-1) + n
-print(sum(400))
+# def sum(n):
+#     if(n==1):
+#         return 1
+#     return sum(n-1) + n
+# print(sum(400))
+
+#WAP FUNCTION WHICH CONVERTS INCHES TO CMS.
+
+def inch_to_cms(inch):
+    return inch *2.54
+
+n = int(input("Enter value in inches:"))
+
+print(f"The corresponding value in cms is {inch_to_cms(n)}")
