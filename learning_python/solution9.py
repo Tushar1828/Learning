@@ -14,14 +14,28 @@
 
 #Find frequency of each character.
 
-l = "Tushar"
+# l = "Tushar"
 
-frequency = {}
+# frequency = {}
 
-for character in l:
-    if character in frequency:
-        frequency[character] += 1
-    else:
-        frequency[character] = 1
+# for character in l:
+#     if character in frequency:
+#         frequency[character] += 1
+#     else:
+#         frequency[character] = 1
 
-print(frequency)            
+# print(frequency)  
+# using function
+
+def char_frequency(text):
+    frequency = {}
+
+    for char in text :
+        if char in frequency:
+            frequency[char] += 1
+        else:
+            frequency[char] = 1
+
+    return frequency
+
+print(char_frequency("Tushar"))   
