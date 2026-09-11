@@ -8,6 +8,20 @@
 #      duplicates   .append(num)
 # print(duplicates)
 
-numbers = [10, 20, 10,30 , 50]
-for i in range(len(numbers)):
-    print(i, numbers[i])
+# numbers = [10, 20, 10,30 , 50]
+# for i in range(len(numbers)):
+#     print(i, numbers[i])
+
+#Find frequency of each character.
+
+l = "Tushar"
+
+frequency = {}
+
+for character in l:
+    if character in frequency:
+        frequency[character] += 1
+    else:
+        frequency[character] = 1
+
+print(frequency)            
