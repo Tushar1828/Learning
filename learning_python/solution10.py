@@ -10,11 +10,23 @@
 
 
 #practice higher values
-n = int(input("Enter a number series: "))
+# n = int(input("Enter a number series: "))
 
-a = 10
-b = 20
+# a = 10
+# b = 20
 
-for i in range(n):
-    print(a, end=" ")
-    a, b = b, a + b
+# for i in range(n):
+#     print(a, end=" ")
+#     a, b = b, a + b
+
+
+#Swap two numbers
+
+a = int(input("Enter first number : "))
+b = int(input("Enter second number : "))
+
+a, b = b, a
+
+print("After swapping:")
+print("a =", a)
+print("b =", b)
