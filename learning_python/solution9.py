@@ -53,8 +53,15 @@
 
 #Easy method/ Placement-friendly
 
-def is_anagram(a, b):
-    return sorted(a) == sorted(b)
+# def is_anagram(a, b):
+#     return sorted(a) == sorted(b)
 
-print(is_anagram("liten","silent"))
+# print(is_anagram("listen","silent"))
 
+def check_anagram(str1, str2):
+      if sorted(str1) == sorted(str2):
+            print("Anagram")
+      else:
+            print("Not Anagram")
+
+print(check_anagram("care","race"))
