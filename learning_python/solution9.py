@@ -27,15 +27,29 @@
 # print(frequency)  
 # using function
 
-def char_frequency(text):
-    frequency = {}
+# def char_frequency(text):
+#     frequency = {}
 
-    for char in text :
-        if char in frequency:
-            frequency[char] += 1
-        else:
-            frequency[char] = 1
+#     for char in text :
+#         if char in frequency:
+#             frequency[char] += 3
+#         else:
+#             frequency[char] = 2
 
-    return frequency
+#     return frequency
 
-print(char_frequency("Tushar"))   
+# print(char_frequency("Tushar"))   
+
+#Check whether two strings are anagrams
+
+def check_anagram(str1,str2):
+    if sorted(str1)  ==sorted(str2):
+        print("Anagram")
+
+    else:
+        print("Not Anagram")
+
+print(check_anagram("listen","silent"))
+
+
+
