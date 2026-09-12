@@ -42,14 +42,19 @@
 
 #Check whether two strings are anagrams
 
-def check_anagram(str1,str2):
-    if sorted(str1)  ==sorted(str2):
-        print("Anagram")
+# def check_anagram(str1,str2):
+#     if sorted(str1)  ==sorted(str2):
+#         print("Anagram")
 
-    else:
-        print("Not Anagram")
+#     else:
+#         print("Not Anagram")
 
-print(check_anagram("listen","silent"))
+# print(check_anagram("listen","silent"))   "listen" = "eilnst"  "silent" = "eilnst"
 
+#Easy method/ Placement-friendly
 
+def is_anagram(a, b):
+    return sorted(a) == sorted(b)
+
+print(is_anagram("liten","silent"))
 
