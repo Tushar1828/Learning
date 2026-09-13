@@ -33,9 +33,20 @@
 
 # find common elements between two lists.
 
-list1 = [1, 2, 3, 4, 5]
-list2 = [3, 4, 5, 6, 7]
-# list3 = [1, 3, 4, 7]
-common = list(set(list1)& set(list2)& set(list3))
+# list1 = [1, 2, 3, 4, 5]
+# list2 = [3, 4, 5, 6, 7]
+# # list3 = [1, 3, 4, 7]
+# common = list(set(list1)& set(list2)& set(list3))
 
-print(common)
+# print(common)
+
+#Find missing number from a list.
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+n = 6
+expected = n* (n + 1) //2
+
+actual = sum(numbers)
+missing = expected - actual
+print("Missing numbers:", missing)
