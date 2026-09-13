@@ -42,11 +42,22 @@
 
 #Find missing number from a list.
 
-numbers = [1, 2, 3, 4, 5, 6]
+# numbers = [1, 2, 3, 4, 5, 6]
 
-n = 6
-expected = n* (n + 1) //2
+# n = 6
+# expected = n* (n + 1) //2
+
+# actual = sum(numbers)
+# missing = expected - actual
+# print("Missing numbers:", missing)
+
+
+numbers = [299, 399, 499, 599]
+
+n = 3
+expected = n*(n+1) // 2
 
 actual = sum(numbers)
+
 missing = expected - actual
 print("Missing numbers:", missing)
