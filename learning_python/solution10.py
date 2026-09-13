@@ -22,11 +22,20 @@
 
 #Swap two numbers
 
-a = int(input("Enter first number : "))
-b = int(input("Enter second number : "))
+# a = int(input("Enter first number : "))
+# b = int(input("Enter second number : "))
 
-a, b = b, a
+# a, b = b, a
 
-print("After swapping:")
-print("a =", a)
-print("b =", b)
+# print("After swapping:")
+# print("a =", a)
+# print("b =", b)
+
+# find common elements between two lists.
+
+list1 = [1, 2, 3, 4, 5]
+list2 = [3, 4, 5, 6, 7]
+# list3 = [1, 3, 4, 7]
+common = list(set(list1)& set(list2)& set(list3))
+
+print(common)
