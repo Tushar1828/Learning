@@ -52,12 +52,28 @@
 # print("Missing numbers:", missing)
 
 
-numbers = [299, 399, 499, 599]
+# numbers = [299, 399, 499, 599]
 
-n = 3
-expected = n*(n+1) // 2
+# n = 3
+# expected = n*(n+1) // 2
 
-actual = sum(numbers)
+# actual = sum(numbers)
 
-missing = expected - actual
-print("Missing numbers:", missing)
+# missing = expected - actual
+# print("Missing numbers:", missing)
+
+class students:
+    def __init__(self, phy, chem, math):
+        self.phy = phy
+        self.chem = chem
+        self.math = math
+
+    @property
+    def percentage(self):
+        return str((self.phy + self.chem + self.math) / 3) + "%"
+
+stu1 = students(56, 87, 96)
+print(stu1.percentage)
+
+stu1.phy = 45
+print(stu1.percentage)
