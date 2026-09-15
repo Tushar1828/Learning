@@ -99,20 +99,32 @@
 
 # Find the majority element
 
-numbers = [2, 2, 1, 1, 1, 2, 2]
+# numbers = [2, 2, 1, 1, 1, 2, 2]
 
-count = 0
-candidate = None
+# count = 0
+# candidate = None
 
-for num in numbers:
+# for num in numbers:
 
-    if count == 0:
-        candidates = num
+#     if count == 0:
+#         candidates = num
 
-    if num == candidate:
-        count += 1
+#     if num == candidate:
+#         count += 1
 
-    else:
-        count -= 1
+#     else:
+#         count -= 1
 
-print(candidate)        
+# print(candidate)     
+
+# Rotate a list by k positions   
+
+numbers = [1, 2, 3, 4, 5]
+
+k = 2
+
+k = k % len(numbers)
+
+result = numbers[-k:] + numbers[:-k]
+
+print(result)
