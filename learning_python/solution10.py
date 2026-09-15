@@ -82,17 +82,37 @@
 
 # Move all zeros to the end
 
-numbers = [0, 2, 0, 39, 0, 67, 0]
+# numbers = [0, 2, 0, 39, 0, 67, 0]
 
-result = []
+# result = []
+
+# for num in numbers:
+#     if num != 0:
+#         result.append(num)
+
+# zeros = len(numbers) -len(result)
+
+# for i in range(zeros):
+#     result.append(0)
+
+# print(result)
+
+# Find the majority element
+
+numbers = [2, 2, 1, 1, 1, 2, 2]
+
+count = 0
+candidate = None
 
 for num in numbers:
-    if num != 0:
-        result.append(num)
 
-zeros = len(numbers) -len(result)
+    if count == 0:
+        candidates = num
 
-for i in range(zeros):
-    result.append(0)
+    if num == candidate:
+        count += 1
 
-print(result)
+    else:
+        count -= 1
+
+print(candidate)        
