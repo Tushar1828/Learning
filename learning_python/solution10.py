@@ -128,3 +128,12 @@ k = k % len(numbers)
 result = numbers[-k:] + numbers[:-k]
 
 print(result)
+
+numbers = [45, 54, 67, 86, 98,  40]
+k = 4
+
+k = k % len(numbers)
+
+result = numbers[-k:] + numbers[-k:]
+
+print(result)
