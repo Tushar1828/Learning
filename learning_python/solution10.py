@@ -62,18 +62,37 @@
 # missing = expected - actual
 # print("Missing numbers:", missing)
 
-class students:
-    def __init__(self, phy, chem, math):
-        self.phy = phy
-        self.chem = chem
-        self.math = math
+# class students:
+#     def __init__(self, phy, chem, math):
+#         self.phy = phy
+#         self.chem = chem
+#         self.math = math
 
-    @property
-    def percentage(self):
-        return str((self.phy + self.chem + self.math) / 3) + "%"
+#     @property
+#     def percentage(self):
+#         return str((self.phy + self.chem + self.math) / 3) + "%"
 
-stu1 = students(56, 87, 96)
-print(stu1.percentage)
+# stu1 = students(56, 87, 96)
+# print(stu1.percentage)
 
-stu1.phy = 45
-print(stu1.percentage)
+# stu1.phy = 45
+# print(stu1.percentage)
+
+
+
+# Move all zeros to the end
+
+numbers = [0, 2, 0, 39, 0, 67, 0]
+
+result = []
+
+for num in numbers:
+    if num != 0:
+        result.append(num)
+
+zeros = len(numbers) -len(result)
+
+for i in range(zeros):
+    result.append(0)
+
+print(result)
