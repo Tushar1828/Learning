@@ -139,9 +139,23 @@
 # print(result)
 # the first non-repeating character
 
-numbers = [1, 1, 2, 3, 4, 4, 3]
+# numbers = [1, 1, 2, 3, 4, 4, 3]
 
-for ch in numbers:
-    if numbers.count(ch) == 1:
-        print(ch)
-        break
+# for ch in numbers:
+#     if numbers.count(ch) == 1:
+#         print(ch)
+#         break
+
+#Find the missing number
+#Numbers are from 1 to n.
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+n = len(numbers) + 1
+
+total = n * (n + 1) // 2
+actual = sum(numbers)
+
+missing = total - actual
+
+print(missing)
