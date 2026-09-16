@@ -119,21 +119,29 @@
 
 # Rotate a list by k positions   
 
-numbers = [1, 2, 3, 4, 5]
+# numbers = [1, 2, 3, 4, 5]
 
-k = 2
+# k = 2
 
-k = k % len(numbers)
+# k = k % len(numbers)
 
-result = numbers[-k:] + numbers[:-k]
+# result = numbers[-k:] + numbers[:-k]
 
-print(result)
+# print(result)
 
-numbers = [45, 54, 67, 86, 98,  40]
-k = 4
+# numbers = [45, 54, 67, 86, 98,  40]
+# k = 4
 
-k = k % len(numbers)
+# k = k % len(numbers)
 
-result = numbers[-k:] + numbers[-k:]
+# result = numbers[-k:] + numbers[-k:]
 
-print(result)
+# print(result)
+# the first non-repeating character
+
+text = "aabbbccccdddde"
+
+for ch in text:
+    if text.count(ch) == 1:
+        print(ch)
+        break
