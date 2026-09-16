@@ -139,9 +139,9 @@
 # print(result)
 # the first non-repeating character
 
-text = "aabbbccccdddde"
+numbers = [1, 1, 2, 3, 4, 4, 3]
 
-for ch in text:
-    if text.count(ch) == 1:
+for ch in numbers:
+    if numbers.count(ch) == 1:
         print(ch)
         break
