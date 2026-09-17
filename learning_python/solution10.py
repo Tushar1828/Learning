@@ -149,13 +149,29 @@
 #Find the missing number
 #Numbers are from 1 to n.
 
-numbers = [1, 2, 3, 4, 5, 6]
+# numbers = [1, 2, 3, 4, 5, 6]
 
-n = len(numbers) + 1
+# n = len(numbers) + 1
 
-total = n * (n + 1) // 2
-actual = sum(numbers)
+# total = n * (n + 1) // 2
+# actual = sum(numbers)
 
-missing = total - actual
+# missing = total - actual
 
-print(missing)
+# print(missing)
+
+# Find two numbers whose sum equals the target.
+
+numbers = [2 , 7 , 11, 16]
+target = 9
+
+seen = {}
+
+for i in range(len(numbers)):
+    required = target - numbers[i]
+
+    if required in seen:
+        print([seen[required], i])
+        break 
+
+    seen[numbers[i]] = i
