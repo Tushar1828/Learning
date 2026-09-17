@@ -177,13 +177,26 @@
 #     seen[numbers[i]] = i
 
 # maximum subarray sum -- (kadane's Algorithm)
-numbers = [-2 , 1 , -3, 4, -1, 2, 1, -5, 4]
+# numbers = [-2 , 1 , -3, 4, -1, 2, 1, -5, 4]
+
+# current = numbers[0]
+# maximum = numbers[0]
+
+# for i in range(1, len(numbers)):
+#     current = max(numbers[i], current + numbers[i])
+#     maximum = max(maximum, current)
+
+# print(maximum)
+
+
+#Minimum subarray sum
+numbers = [ 1,-2, -3, 5]
 
 current = numbers[0]
-maximum = numbers[0]
+minimum = numbers[0]
 
-for i in range(1, len(numbers)):
-    current = max(numbers[i], current + numbers[i])
-    maximum = max(maximum, current)
+for i in range(1 , len(numbers)):
+    current = min(numbers[i], current + numbers[i])
+    minimum = min (minimum, current )
 
-print(maximum)
+print(minimum)   
