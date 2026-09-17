@@ -162,16 +162,28 @@
 
 # Find two numbers whose sum equals the target.
 
-numbers = [2 , 7 , 11, 16]
-target = 9
+# numbers = [2 , 7 , 11, 16]
+# target = 9
 
-seen = {}
+# seen = {}
 
-for i in range(len(numbers)):
-    required = target - numbers[i]
+# for i in range(len(numbers)):
+#     required = target - numbers[i]
 
-    if required in seen:
-        print([seen[required], i])
-        break 
+#     if required in seen:
+#         print([seen[required], i])
+#         break 
 
-    seen[numbers[i]] = i
+#     seen[numbers[i]] = i
+
+# maximum subarray sum -- (kadane's Algorithm)
+numbers = [-2 , 1 , -3, 4, -1, 2, 1, -5, 4]
+
+current = numbers[0]
+maximum = numbers[0]
+
+for i in range(1, len(numbers)):
+    current = max(numbers[i], current + numbers[i])
+    maximum = max(maximum, current)
+
+print(maximum)
