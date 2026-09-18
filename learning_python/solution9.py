@@ -68,15 +68,33 @@
 
 # intersection of two arrays
 
-list1 = [1, 2, 2, 1, 1, 2, 1]
-list2 = [2, 2, 1, 1]
+# list1 = [1, 2, 2, 1, 1, 2, 1]
+# list2 = [2, 2, 1, 1]
 
-result = []
+# result = []
 
-for num in list2:
+# for num in list2:
 
-    if num in list1:
-        result.append(num)
-        list1.remove(num)
+#     if num in list1:
+#         result.append(num)
+#         list1.remove(num)
 
-print(result)
+# print(result)
+
+# Count Vowels and Consonants
+
+text = "python programming"
+
+vowels = 0
+consonants = 0
+
+for ch in text.lower():
+
+    if ch in "aeiou":
+        vowels += 1
+
+    elif ch.isalpha():
+        consonants += 1
+
+print("Vowels:", vowels)
+print("Consonants:", consonants)
