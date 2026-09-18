@@ -58,10 +58,25 @@
 
 # print(is_anagram("listen","silent"))
 
-def check_anagram(str1, str2):
-      if sorted(str1) == sorted(str2):
-            print("Anagram")
-      else:
-            print("Not Anagram")
+# def check_anagram(str1, str2):
+#       if sorted(str1) == sorted(str2):
+#             print("Anagram")
+#       else:
+#             print("Not Anagram")
 
-print(check_anagram("care","race"))
+# print(check_anagram("care","race"))
+
+# intersection of two arrays
+
+list1 = [1, 2, 2, 1, 1, 2, 1]
+list2 = [2, 2, 1, 1]
+
+result = []
+
+for num in list2:
+
+    if num in list1:
+        result.append(num)
+        list1.remove(num)
+
+print(result)
