@@ -188,15 +188,29 @@
 
 # print(maximum)
 
+# first repeated character
+
+text = "programming"
+
+for ch in text:
+    if text.count(ch) > 1:
+        print(ch)
+        break
+
+
+
+
+
+
 
 #Minimum subarray sum
-numbers = [ 1,-2, -3, 5]
+# numbers = [ 1,-2, -3, 5]
 
-current = numbers[0]
-minimum = numbers[0]
+# current = numbers[0]
+# minimum = numbers[0]
 
-for i in range(1 , len(numbers)):
-    current = min(numbers[i], current + numbers[i])
-    minimum = min (minimum, current )
+# for i in range(1 , len(numbers)):
+#     current = min(numbers[i], current + numbers[i])
+#     minimum = min (minimum, current )
 
-print(minimum)   
+# print(minimum)   
