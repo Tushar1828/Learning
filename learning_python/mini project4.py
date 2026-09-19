@@ -47,3 +47,13 @@ elif choice == "2":
             print("product :", product["quantity"])
             print("product :", product["total"])
 
+# Calculate Total
+elif choice == "3":
+
+        grand_total = 0
+
+        for product in products:
+            grand_total = grand_total + product["total"]
+
+        print("\nGrand Total = ₹", grand_total)
+
