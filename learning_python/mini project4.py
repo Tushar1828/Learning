@@ -17,7 +17,7 @@ if choice == "1":
 
     name = input("Enter product name: ")
     price = float(input("Enter price: "))
-    quantity = int(input("ENter quantity"))
+    quantity = int(input("ENter quantity: "))
 
     total = price * quantity
 
@@ -31,3 +31,19 @@ if choice == "1":
     products.append(product)
 
     print("product added succesfully !")
+
+# VIEW BILL
+elif choice == "2":
+
+    if len(products) == 0:
+        print("No products added!")
+
+    else:
+        print("\n ------- BILL --------")
+
+        for product in products:
+            print("product :", product["name"])
+            print("product :", product["price"])
+            print("product :", product["quantity"])
+            print("product :", product["total"])
+
