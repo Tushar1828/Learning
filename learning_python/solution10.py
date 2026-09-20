@@ -190,16 +190,12 @@
 
 # first repeated character
 
-text = "programming"
+# text = "programming"
 
-for ch in text:
-    if text.count(ch) > 1:
-        print(ch)
-        break
-
-
-
-
+# for ch in text:
+#     if text.count(ch) > 1:
+#         print(ch)
+#         break
 
 
 
@@ -214,3 +210,14 @@ for ch in text:
 #     minimum = min (minimum, current )
 
 # print(minimum)   
+
+
+# Second Largest Number without sort()
+
+numbers = [10, 5, 20, 8, 25]
+
+largest = float('-inf')
+second =float('-intf')
+
+for num in numbers:
+    
