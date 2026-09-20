@@ -1,69 +1,72 @@
 # BILLING SYSTEM
 
-# products = []
+products = []
 
-# while True:
-#     print("\n ==== BILING SYSTEM ====")
-#     print("1. Add product")
-#     print("2. View Bill")
-#     print("3. calculate Total")
-#     print("4. Exit")
+while True:
 
-#     choice =  input("ENter your choice: ")
 
-# # Add product
+    
+    print("\n ==== BILING SYSTEM ====")
+    print("1. Add product")
+    print("2. View Bill")
+    print("3. calculate Total")
+    print("4. Exit")
 
-# if choice == "1":
+    choice =  input("ENter your choice: ")
 
-#     name = input("Enter product name: ")
-#     price = float(input("Enter price: "))
-#     quantity = int(input("ENter quantity: "))
+# Add product
 
-#     total = price * quantity
+if choice == "1":
 
-#     product = {
-#         "name": name,
-#         "price": price,
-#         "quantity": quantity,
-#         "total": total
-#     }
+    name = input("Enter product name: ")
+    price = float(input("Enter price: "))
+    quantity = int(input("ENter quantity: "))
 
-#     products.append(product)
+    total = price * quantity
 
-#     print("product added succesfully !")
+    product = {
+        "name": name,
+        "price": price,
+        "quantity": quantity,
+        "total": total
+    }
 
-# # VIEW BILL
-# elif choice == "2":
+    products.append(product)
 
-#     if len(products) == 0:
-#         print("No products added!")
+    print("product added succesfully !")
 
-#     else:
-#         print("\n ------- BILL --------")
+# VIEW BILL
+elif choice == "2":
 
-#         for product in products:
-#             print("product :", product["name"])
-#             print("product :", product["price"])
-#             print("product :", product["quantity"])
-#             print("product :", product["total"])
+    if len(products) == 0:
+        print("No products added!")
 
-# # Calculate Total
-# elif choice == "3":
+    else:
+        print("\n ------- BILL --------")
 
-#         grand_total = 0
+        for product in products:
+            print("product :", product["name"])
+            print("product :", product["price"])
+            print("product :", product["quantity"])
+            print("product :", product["total"])
 
-#         for product in products:
-#             grand_total = grand_total + product["total"]
+# Calculate Total
+elif choice == "3":
 
-#         print("\nGrand Total = ₹", grand_total)
+        grand_total = 0
 
-# # Exit 
-# elif choice == "4":
+        for product in products:
+            grand_total = grand_total + product["total"]
 
-#     print("Thank you for shopping!")
+        print("\nGrand Total = ₹", grand_total)
+
+# Exit 
+elif choice == "4":
+
+    print("Thank you for shopping!")
     
 
 
-# else:
-#     print("Invalid choice!")
+else:
+    print("Invalid choice!")
 
