@@ -214,18 +214,25 @@
 
 # Second Largest Number without sort()
 
-numbers = [10, 5, 20, 8, 25]
+# numbers = [10, 5, 20, 8, 25]
 
-largest = float('-inf')
-second =float('-inf')
+# largest = float('-inf')
+# second =float('-intf')
 
-for num in numbers:
+# for num in numbers:
 
-    if num > largest:
-        second = largest
-        largest = num
+#     if num > largest:
+#         second = largest
+#         largest = num
 
-    elif num > second and num != largest:
-        second =  num
+#     elif num > second and num != largest:
+#         second =  num
 
-print(second)
+# print(second)
+
+# Pair With Given Sum
+
+numbers = [2, 7, 11, 15]
+target = 13
+
+for i in range(len(numbers)):
