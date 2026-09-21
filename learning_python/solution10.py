@@ -250,13 +250,29 @@
 
 # Reverse Each Word
 
-sentence = "Hey Buddy! How are You"
+# sentence = "Hey Buddy! How are You"
+
+# words = sentence.split()
+
+# result = []
+
+# for word in words :
+#     result.append(word[::-1])
+
+# print(" ".join(result))    
+
+
+# Longest Word
+
+sentence = "Hey Tushar ! Did you learn Python ?"
 
 words = sentence.split()
 
-result = []
+longest = words[0]
 
-for word in words :
-    result.append(word[::-1])
+for word in words:
 
-print(" ".join(result))    
+     if len(word) > len(longest):
+          longest = word 
+
+print(longest)
