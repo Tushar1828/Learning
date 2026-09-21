@@ -240,10 +240,23 @@
 #         if numbers[i] + numbers[j] == target:
 #             print(numbers[i], numbers[j])
 
-numbers = [24, 45, 50, 100, 99 , 101]
-target = 199
+# numbers = [24, 45, 50, 100, 99 , 101]
+# target = 199
 
-for i in range(len(numbers)):
-    for j in range(i + 1,len(numbers)):
-        if numbers[i] + numbers[j] == target:
-            print(numbers[i], numbers[j])
+# for i in range(len(numbers)):
+#     for j in range(i + 1,len(numbers)):
+#         if numbers[i] + numbers[j] == target:
+#             print(numbers[i], numbers[j])
+
+# Reverse Each Word
+
+sentence = "Hey Buddy! How are You"
+
+words = sentence.split()
+
+result = []
+
+for word in words :
+    result.append(word[::-1])
+
+print(" ".join(result))    
