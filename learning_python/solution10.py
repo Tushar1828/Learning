@@ -232,10 +232,18 @@
 
 # Pair With Given Sum
 
-numbers = [2, 7, 11, 15]
-target = 13
+# numbers = [2, 7, 11, 15]
+# target = 13
+
+# for i in range(len(numbers)):
+#     for j in range(i + 1, len(numbers)):
+#         if numbers[i] + numbers[j] == target:
+#             print(numbers[i], numbers[j])
+
+numbers = [24, 45, 50, 100, 99 , 101]
+target = 199
 
 for i in range(len(numbers)):
-    for j in range(i + 1, len(numbers)):
+    for j in range(i + 1,len(numbers)):
         if numbers[i] + numbers[j] == target:
             print(numbers[i], numbers[j])
