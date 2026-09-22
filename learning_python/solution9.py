@@ -101,18 +101,18 @@
 
 # Q. find vowels and consonants in a sentence by its own 
 
-text = input("Enter a string: ")
+# text = input("Enter a string: ")
 
-vowels = 0
-consonants = 0
+# vowels = 0
+# consonants = 0
 
-for ch in text.lower():
+# for ch in text.lower():
 
-    if ch in "aieou":
-        vowels += 1
+#     if ch in "aieou":
+#         vowels += 1
 
-    elif ch.isalpha():
-        consonants += 1
+#     elif ch.isalpha():
+#         consonants += 1
 
-print("vowels:", vowels)
-print("consonants:", consonants)
+# print("vowels:", vowels)
+# print("consonants:", consonants)

@@ -264,8 +264,7 @@
 
 # Longest Word
 
-sentence = "Hey Tushar ! Did you learn Python ?"
-
+sentence = "Pneumonoultramicroscopicsilicovolcanoconiosis dictionaries "
 words = sentence.split()
 
 longest = words[0]
