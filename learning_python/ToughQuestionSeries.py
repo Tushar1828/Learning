@@ -46,19 +46,28 @@
 
 # longest palindrome substring
 
-text = "babad"
+# text = "babad"
 
-longest = ""
+# longest = ""
 
-for i in range(len(text)):
+# for i in range(len(text)):
 
-    for j in range(i + 1, len(text) + 1):
+#     for j in range(i + 1, len(text) + 1):
 
-        substring = text[i:j]
+#         substring = text[i:j]
 
-        if substring == substring[::-1]:
+#         if substring == substring[::-1]:
 
-            if len(substring) > len(longest):
-                longest = substring
+#             if len(substring) > len(longest):
+#                 longest = substring
 
-print(longest)
+# print(longest)
+
+# all subarrays with given sum
+
+numbers = [1, 2, 3, 6, 2]
+target = 5
+
+for i in range(len(numbers)):
+
+    total = 0
