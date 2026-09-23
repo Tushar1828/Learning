@@ -37,8 +37,22 @@
 #WAP TO PRINT THIRD,FIFTH AND SEVENTH ELEMENT FROM A LIST
 #USING ENUMERATE FUNCTION.
 
-l = [1, 2, 3, 4, 5, 6, 7, 8]
+# l = [1, 2, 3, 4, 5, 6, 7, 8]
 
-for i, item in enumerate(l):
-     if i== 2 or i == 5 or i == 7:
-         print(item)
+# for i, item in enumerate(l):
+#      if i== 2 or i == 5 or i == 7:
+#          print(item)
+
+
+# longest palindrome substring
+
+text = "babad"
+
+longest = ""
+
+for i in range(len(text)):
+
+    for j in range(i + 1, len(text) + 1):
+
+        substring = text[i:j]
+        
