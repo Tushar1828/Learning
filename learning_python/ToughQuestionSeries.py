@@ -108,3 +108,10 @@ seen = {}
 for num in numbers:
 
     required = target - num
+
+    if required in seen:
+        print(required, num)
+        break
+
+    seen[num] = True
+    
