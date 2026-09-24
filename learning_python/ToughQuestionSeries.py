@@ -65,15 +65,27 @@
 
 # all subarrays with given sum
 
-numbers = [1, 2, 3, 6, 2]
-target = 5
+# numbers = [1, 2, 3, 6, 2]
+# target = 5
 
-for i in range(len(numbers)):
+# for i in range(len(numbers)):
 
-    total = 0
+#     total = 0
 
-    for j in range(i, len(numbers)):
-        total += numbers[j]
+#     for j in range(i, len(numbers)):
+#         total += numbers[j]
 
-        if total == target:
-            print(numbers[i:j+1])
+#         if total == target:
+#             print(numbers[i:j+1])
+
+# majority element
+
+numbers = [2, 2, 1, 1, 1, 2, 2]
+
+candidate = None
+count = 0
+
+for num in numbers:
+
+    if count == 0:
+        candidate = num
