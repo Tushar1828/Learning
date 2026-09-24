@@ -80,7 +80,7 @@
 
 # majority element
 
-numbers = [2, 2, 1, 1, 1, 2, 2]
+numbers = [32, 45, 76, 99, 57]
 
 candidate = None
 count = 0
