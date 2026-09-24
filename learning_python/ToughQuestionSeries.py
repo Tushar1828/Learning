@@ -80,20 +80,31 @@
 
 # majority element
 
-numbers = [32, 45, 76, 99, 57]
+# numbers = [32, 45, 76, 99, 57]
 
-candidate = None
-count = 0
+# candidate = None
+# count = 0
+
+# for num in numbers:
+
+#     if count == 0:
+#         candidate = num
+
+#     if num == candidate:
+#         count += 1
+
+#     else:
+#         count  -= 1
+
+# print(candidate)
+
+# Find two numbers whose sum is target
+
+numbers = [2, 7, 11, 15]
+target = 9
+
+seen = {}
 
 for num in numbers:
 
-    if count == 0:
-        candidate = num
-
-    if num == candidate:
-        count += 1
-
-    else:
-        count  -= 1
-
-print(candidate)
+    required = target - num
