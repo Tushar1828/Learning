@@ -124,3 +124,12 @@ result = []
 for i in range(len(numbers)):
     greater = True
 
+    for i in range(len(numbers)):
+
+        greater = True
+
+        for j in range(i + 1, len(numbers)):
+
+            if numbers[i] <= numbers[j]:
+                greater = False
+                break
