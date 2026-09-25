@@ -117,24 +117,35 @@
 
 #   elements greater than all elements to their right
 
-numbers = [16, 20, 4, 6, 8]
+# numbers = [16, 20, 4, 6, 8]
 
-result = []
+# result = []
 
-for i in range(len(numbers)):
-    greater = True
+# for i in range(len(numbers)):
+#     greater = True
 
-    for i in range(len(numbers)):
+#     for i in range(len(numbers)):
 
-        greater = True
+#         greater = True
 
-        for j in range(i + 1, len(numbers)):
+#         for j in range(i + 1, len(numbers)):
 
-            if numbers[i] <= numbers[j]:
-                greater = False
-                break
+#             if numbers[i] <= numbers[j]:
+#                 greater = False
+#                 break
 
-        if greater:
-            result.append(numbers[i])
+#         if greater:
+#             result.append(numbers[i])
 
-print(result)
+# print(result)
+
+# the first missing positive number
+
+numbers = [3, 4, -1, 1]
+
+positive = set(numbers)
+
+number = 1
+
+while number in positive:
+    number += 1
