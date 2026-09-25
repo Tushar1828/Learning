@@ -133,3 +133,8 @@ for i in range(len(numbers)):
             if numbers[i] <= numbers[j]:
                 greater = False
                 break
+
+        if greater:
+            result.append(numbers[i])
+
+print(result)
