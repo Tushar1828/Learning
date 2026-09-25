@@ -100,18 +100,27 @@
 
 # Find two numbers whose sum is target
 
-numbers = [2, 7, 11, 15]
-target = 9
+# numbers = [2, 7, 11, 15]
+# target = 9
 
-seen = {}
+# seen = {}
 
-for num in numbers:
+# for num in numbers:
 
-    required = target - num
+#     required = target - num
 
-    if required in seen:
-        print(required, num)
-        break
+#     if required in seen:
+#         print(required, num)
+#         break
 
-    seen[num] = True
-    
+#     seen[num] = True
+
+#   elements greater than all elements to their right
+
+numbers = [16, 20, 4, 6, 8]
+
+result = []
+
+for i in range(len(numbers)):
+    greater = True
+
