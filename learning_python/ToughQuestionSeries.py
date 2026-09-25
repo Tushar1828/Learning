@@ -149,3 +149,5 @@ number = 1
 
 while number in positive:
     number += 1
+
+print(number)
