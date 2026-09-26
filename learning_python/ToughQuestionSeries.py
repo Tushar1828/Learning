@@ -141,13 +141,23 @@
 
 # the first missing positive number
 
-numbers = [3, 4, -1, 1]
+# numbers = [3, 4, -1, 1]
 
-positive = set(numbers)
+# positive = set(numbers)
 
-number = 1
+# number = 1
 
-while number in positive:
-    number += 1
+# while number in positive:
+#     number += 1
 
-print(number)
+# print(number)
+
+# common characters between two strings
+
+str1 = "hello"
+str2 = "world"
+
+common = ""
+
+for ch in str1:
+    
