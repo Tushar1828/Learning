@@ -176,4 +176,11 @@ maximum = numbers[-1]
 leaders.append(maximum)
 
 for i in range(len(numbers) - 2, -1, -1):
-    
+
+    if numbers[i] > maximum:
+        maximum = numbers[i]
+        leaders.append(numbers[i])
+
+leaders.reverse()
+
+print(leaders)
