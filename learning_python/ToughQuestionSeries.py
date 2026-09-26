@@ -154,14 +154,26 @@
 
 # common characters between two strings
 
-str1 = "hello"
-str2 = "world"
+# str1 = "hello"
+# str2 = "world"
 
-common = ""
+# common = ""
 
-for ch in str1:
+# for ch in str1:
 
-    if ch in str2 and ch not in common:
-        common += ch
+#     if ch in str2 and ch not in common:
+#         common += ch
 
-print(common)
+# print(common)
+
+# leaders in an array
+
+numbers = [16, 17, 4, 4, 6, 7, 8]
+
+leaders = []
+
+maximum = numbers[-1]
+leaders.append(maximum)
+
+for i in range(len(numbers) - 2, -1, -1):
+    
