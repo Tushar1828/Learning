@@ -160,4 +160,8 @@ str2 = "world"
 common = ""
 
 for ch in str1:
-    
+
+    if ch in str2 and ch not in common:
+        common += ch
+
+print(common)
