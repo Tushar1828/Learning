@@ -168,19 +168,29 @@
 
 # leaders in an array
 
-numbers = [16, 17, 4, 4, 6, 7, 8]
+# numbers = [16, 17, 4, 4, 6, 7, 8]
 
-leaders = []
+# leaders = []
 
-maximum = numbers[-1]
-leaders.append(maximum)
+# maximum = numbers[-1]
+# leaders.append(maximum)
 
-for i in range(len(numbers) - 2, -1, -1):
+# for i in range(len(numbers) - 2, -1, -1):
 
-    if numbers[i] > maximum:
-        maximum = numbers[i]
-        leaders.append(numbers[i])
+#     if numbers[i] > maximum:
+#         maximum = numbers[i]
+#         leaders.append(numbers[i])
 
-leaders.reverse()
+# leaders.reverse()
 
-print(leaders)
+# print(leaders)
+
+# Find longest substring containing only unique characters.
+
+text = "pwwkew"
+
+seen = set()
+left = 0
+longest = 0
+
+for right in range(len(text)):
