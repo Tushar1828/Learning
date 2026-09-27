@@ -194,3 +194,7 @@ left = 0
 longest = 0
 
 for right in range(len(text)):
+
+    while text[right] in seen:
+        seen.remove(text[left])
+        left +=1
