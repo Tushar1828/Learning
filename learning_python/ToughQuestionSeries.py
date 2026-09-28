@@ -187,20 +187,32 @@
 
 # Find longest substring containing only unique characters.
 
-text = "pwwkew"
+# text = "pwwkew"
 
-seen = set()
-left = 0
-longest = 0
+# seen = set()
+# left = 0
+# longest = 0
 
-for right in range(len(text)):
+# for right in range(len(text)):
 
-    while text[right] in seen:
-        seen.remove(text[left])
-        left +=1
+#     while text[right] in seen:
+#         seen.remove(text[left])
+#         left +=1
 
-    seen.add(text[right])
+#     seen.add(text[right])
 
-    longest = max(longest, right - left + 1)
+#     longest = max(longest, right - left + 1)
 
-print(longest)
+# print(longest)
+
+# E-commerce Order System
+
+class product:
+
+    def __init__(self, name, price, quantity):
+        self.name = name
+        self.price= price
+        self.quantity = quantity
+
+    def total_price(self):
+        return self.price * self.quantity
