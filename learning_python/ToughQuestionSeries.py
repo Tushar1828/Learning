@@ -229,4 +229,19 @@ class order:
     def calculate_total(self):
 
         total = 0
-        
+
+        for product in self.products:
+            total += product.total_price()
+
+        return total 
+
+    def apply_discout(self, discount):
+
+        total = self.calculate_total()
+
+        return total - (total * discount / 100)
+
+    order = order("Tushar")
+
+p1 = product("laptop", 50000, 1)
+p2 = product("Mouse", 1000, 2)
