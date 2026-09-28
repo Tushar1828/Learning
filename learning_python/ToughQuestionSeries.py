@@ -249,3 +249,5 @@ order.add_product(p1)
 order.add_product(p2)
 
 print("Total:", order.calculate_total())
+
+print("Final:", order.apply_discout(10))
