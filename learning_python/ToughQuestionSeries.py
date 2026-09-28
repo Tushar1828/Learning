@@ -240,8 +240,12 @@ class order:
         total = self.calculate_total()
 
         return total - (total * discount / 100)
-
-    order = order("Tushar")
+order = order("Tushar")
 
 p1 = product("laptop", 50000, 1)
 p2 = product("Mouse", 1000, 2)
+
+order.add_product(p1)
+order.add_product(p2)
+
+print("Total:", order.calculate_total())
