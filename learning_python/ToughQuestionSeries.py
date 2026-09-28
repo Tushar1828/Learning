@@ -216,3 +216,17 @@ class product:
 
     def total_price(self):
         return self.price * self.quantity
+
+class order:
+
+    def __init__(self, customer):
+        self.customer = customer
+        self.products = []
+
+    def add_product(self, product):
+        self.products.append(product)
+
+    def calculate_total(self):
+
+        total = 0
+        
