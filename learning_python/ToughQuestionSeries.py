@@ -246,6 +246,7 @@ p1 = product("laptop", 50000, 1)
 p2 = product("Mouse", 1000, 2)
 p3 = product("keyboard", 2000, 3)
 
+
 order.add_product(p1)
 order.add_product(p2)
 order.add_product(p3)
