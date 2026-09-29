@@ -1,0 +1,6 @@
+def apply_discout(self, discount):
+
+        total = self.calculate_total()
+
+        return total - (total * discount / 100)
+order = order("Tushar")
