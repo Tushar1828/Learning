@@ -69,4 +69,22 @@ class parking:
 
         self.slots[slot] = vehicle
 
-        
+        print(vehicle.number, "parked at slot", slot)
+
+    def remove_vehicle(self, number):
+
+        for slot, vehicle in self.slots.items():
+
+            if vehicle.number == number:
+
+                del self.slots[slot]
+
+                print(
+                    number,
+                    "removed from slot",
+                    slot
+                )
+
+                return
+
+        print("Vehicle not found")  
