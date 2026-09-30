@@ -61,3 +61,12 @@ class parking:
         if len(self.slots) >= self.total_slots:
             print("Praking Full")
             return
+
+        slot = 1
+
+        while slot in self.slots:
+            slot += 1
+
+        self.slots[slot] = vehicle
+
+        
