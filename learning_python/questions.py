@@ -55,3 +55,9 @@ class parking:
     def __init__(self, total_slots):
         self.total_slots = total_slots
         self.slots = {}
+
+    def park_vehicle(self, vehicle):
+
+        if len(self.slots) >= self.total_slots:
+            print("Praking Full")
+            return
