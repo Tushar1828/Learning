@@ -24,7 +24,8 @@
 
 # Find longest substring containing only unique characters.
 
-text = "teepkyrrr"
+
+text = "zzxxxcccvv"
 
 seen = set()
 left = 0
