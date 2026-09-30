@@ -1,26 +1,26 @@
-class calculator:
-    def __init__(self, n):
-        self.n = n
+# class calculator:
+#     def __init__(self, n):
+#         self.n = n
 
-    def square(self):
-        print(f"The square is {self.n*self.n}")
+#     def square(self):
+#         print(f"The square is {self.n*self.n}")
 
-    def cube(self):
-        print(f"The cube is {self.n*self.n*self.n}")
+#     def cube(self):
+#         print(f"The cube is {self.n*self.n*self.n}")
 
-    def squareroot(self):
-        print(f"the squareroot is  {self.n**1/2}")
+#     def squareroot(self):
+#         print(f"the squareroot is  {self.n**1/2}")
 
-    @staticmethod
-    def Hey():
-        print("Hey Buddy!")
+#     @staticmethod
+#     def Hey():
+#         print("Hey Buddy!")
     
 
-a = calculator(10)
-a.Hey()
-a.square ()
-a.cube()
-a.squareroot()
+# a = calculator(10)
+# a.Hey()
+# a.square ()
+# a.cube()
+# a.squareroot()
 
 # Find longest substring containing only unique characters.
 
@@ -42,3 +42,16 @@ a.squareroot()
 #     longest = max(longest, right - left + 1)
 
 # print(longest)
+
+#Parking Management System
+
+class vehicle:
+
+    def __init__(self, number):
+        self.number = number
+
+class parking:
+
+    def __init__(self, total_slots):
+        self.total_slots = total_slots
+        self.slots = {}
