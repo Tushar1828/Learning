@@ -7,7 +7,7 @@ menu = {
     'COFFEE' : 50,
     'ICE CREAME' : 50,
     'PATTIES' : 50,
-    }
+     }
 #GREET
 print("welcome to PYTHON RESTAURANT")
 print("BURGER : 80\nPIZZA : 120\nCOFFEE: 70\nPASTA : 120\nICE CREAME : 50")

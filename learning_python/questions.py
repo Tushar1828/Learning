@@ -88,3 +88,13 @@ class parking:
                 return
 
         print("Vehicle not found")  
+
+        def show_slots(self):
+
+         print("\nParking Status:")
+
+        for slot in range(1, self.total_slots + 1):
+
+            if slot in self.slots:
+                print("Slot",slot,"->",self.slots[slot].number)
+                
