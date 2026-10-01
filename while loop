@@ -1,0 +1,8 @@
+ slot = 1
+
+        while slot in self.slots:
+            slot += 1
+
+        self.slots[slot] = vehicle
+
+        print(vehicle.number, "parked at slot", slot)
