@@ -97,4 +97,14 @@ class parking:
 
             if slot in self.slots:
                 print("Slot",slot,"->",self.slots[slot].number)
-                
+
+            else:
+                print("slot", slot,"-> Empty")
+
+parking = parking(3)
+
+v1 = vehicle("JH01AB5748")
+v2 = vehicle("JH01CD3087")
+
+parking.park_vehicle(v1)
+parking.park_vehicle(v2)
