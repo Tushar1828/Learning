@@ -108,3 +108,9 @@ v2 = vehicle("JH01CD3087")
 
 parking.park_vehicle(v1)
 parking.park_vehicle(v2)
+
+parking.show_slots()
+
+parking.remove_vehicle("JH01AB5748")
+
+parking.show_slots()  
