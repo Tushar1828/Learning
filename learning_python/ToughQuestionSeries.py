@@ -207,50 +207,57 @@
 
 # E-commerce Order System
 
-class product:
+# class product:
 
-    def __init__(self, name, price, quantity):
-        self.name = name
-        self.price= price
-        self.quantity = quantity
+#     def __init__(self, name, price, quantity):
+#         self.name = name
+#         self.price= price
+#         self.quantity = quantity
 
-    def total_price(self):
-        return self.price * self.quantity
+#     def total_price(self):
+#         return self.price * self.quantity
 
-class order:
+# class order:
 
-    def __init__(self, customer):
-        self.customer = customer
-        self.products = []
+#     def __init__(self, customer):
+#         self.customer = customer
+#         self.products = []
 
-    def add_product(self, product):
-        self.products.append(product)
+#     def add_product(self, product):
+#         self.products.append(product)
 
-    def calculate_total(self):
+#     def calculate_total(self):
 
-        total = 0
+#         total = 0
 
-        for product in self.products:
-            total += product.total_price()
+#         for product in self.products:
+#             total += product.total_price()
 
-        return total 
+#         return total 
 
-    def apply_discout(self, discount):
+#     def apply_discout(self, discount):
 
-        total = self.calculate_total()
+#         total = self.calculate_total()
 
-        return total - (total * discount / 100)
-order = order("Tushar")
+#         return total - (total * discount / 100)
+# order = order("Tushar")
 
-p1 = product("laptop", 50000, 1)
-p2 = product("Mouse", 1000, 2)
-p3 = product("keyboard", 2000, 3)
+# p1 = product("laptop", 50000, 1)
+# p2 = product("Mouse", 1000, 2)
+# p3 = product("keyboard", 2000, 3)
 
 
-order.add_product(p1)
-order.add_product(p2)
-order.add_product(p3)
+# order.add_product(p1)
+# order.add_product(p2)
+# order.add_product(p3)
 
-print("Total:", order.calculate_total())
+# print("Total:", order.calculate_total())
 
-print("Final:", order.apply_discout(50))
+# print("Final:", order.apply_discout(50))
+
+# Rearrange positive and negative numbers
+
+numbers = [1, -2, 3, -4, 5, -6]
+
+positive = []
+negative = []
