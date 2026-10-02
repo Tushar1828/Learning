@@ -261,3 +261,10 @@ numbers = [1, -2, 3, -4, 5, -6]
 
 positive = []
 negative = []
+
+for num in numbers:
+
+    if num >= 0:
+        positive.append(num)
+    else:
+        negative.append(num)
