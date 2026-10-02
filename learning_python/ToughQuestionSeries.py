@@ -268,3 +268,7 @@ for num in numbers:
         positive.append(num)
     else:
         negative.append(num)
+
+result = positive + negative
+
+print(result)
