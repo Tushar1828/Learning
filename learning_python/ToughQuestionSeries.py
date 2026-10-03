@@ -257,18 +257,31 @@
 
 # Rearrange positive and negative numbers
 
-numbers = [1, -2, 3, -4, 5, -6, -28,-49,99,1010]
+# numbers = [1, -2, 3, -4, 5, -6, -28,-49,99,1010]
 
-positive = []
-negative = []
+# positive = []
+# negative = []
 
-for num in numbers:
+# for num in numbers:
 
-    if num >= 0:
-        positive.append(num)
-    else:
-        negative.append(num)
+#     if num >= 0:
+#         positive.append(num)
+#     else:
+#         negative.append(num)
 
-result = positive + negative
+# result = positive + negative
 
-print(result)
+# print(result)
+
+# common elements between two list
+
+a = [1, 2, 3, 4]
+b = [3, 4, 5, 6]
+
+common = []
+
+for num in a:
+    if num in b:
+        common.append(num)
+
+print(common)
