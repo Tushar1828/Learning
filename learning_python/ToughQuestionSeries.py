@@ -275,13 +275,25 @@
 
 # common elements between two list
 
-a = [1, 2, 3, 4]
-b = [3, 4, 5, 6]
+# a = [1, 2, 3, 4]
+# b = [3, 4, 5, 6]
 
-common = []
+# common = []
 
-for num in a:
-    if num in b:
-        common.append(num)
+# for num in a:
+#     if num in b:
+#         common.append(num)
 
-print(common)
+# print(common)
+
+# Count even and odd numbers
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+even = 0
+odd = 0
+
+for num in numbers:
+    if num % 2 == 0:
+        even += 1
+    
