@@ -45,72 +45,86 @@
 
 #Parking Management System
 
-class vehicle:
+# class vehicle:
 
-    def __init__(self, number):
-        self.number = number
+#     def __init__(self, number):
+#         self.number = number
 
-class parking:
+# class parking:
 
-    def __init__(self, total_slots):
-        self.total_slots = total_slots
-        self.slots = {}
+#     def __init__(self, total_slots):
+#         self.total_slots = total_slots
+#         self.slots = {}
 
-    def park_vehicle(self, vehicle):
+#     def park_vehicle(self, vehicle):
 
-        if len(self.slots) >= self.total_slots:
-            print("Praking Full")
-            return
+#         if len(self.slots) >= self.total_slots:
+#             print("Praking Full")
+#             return
 
-        slot = 1
+#         slot = 1
 
-        while slot in self.slots:
-            slot += 1
+#         while slot in self.slots:
+#             slot += 1
 
-        self.slots[slot] = vehicle
+#         self.slots[slot] = vehicle
 
-        print(vehicle.number, "parked at slot", slot)
+#         print(vehicle.number, "parked at slot", slot)
 
-    def remove_vehicle(self, number):
+#     def remove_vehicle(self, number):
 
-        for slot, vehicle in self.slots.items():
+#         for slot, vehicle in self.slots.items():
 
-            if vehicle.number == number:
+#             if vehicle.number == number:
 
-                del self.slots[slot]
+#                 del self.slots[slot]
 
-                print(
-                    number,
-                    "removed from slot",
-                    slot
-                )
+#                 print(
+#                     number,
+#                     "removed from slot",
+#                     slot
+#                 )
 
-                return
+#                 return
 
-        print("Vehicle not found")  
+#         print("Vehicle not found")  
 
-        def show_slots(self):
+#         def show_slots(self):
 
-         print("\nParking Status:")
+#          print("\nParking Status:")
 
-        for slot in range(1, self.total_slots + 1):
+#         for slot in range(1, self.total_slots + 1):
 
-            if slot in self.slots:
-                print("Slot",slot,"->",self.slots[slot].number)
+#             if slot in self.slots:
+#                 print("Slot",slot,"->",self.slots[slot].number)
 
-            else:
-                print("slot", slot,"-> Empty")
+#             else:
+#                 print("slot", slot,"-> Empty")
 
-parking = parking(3)
+# parking = parking(3)
 
-v1 = vehicle("JH01AB5748")
-v2 = vehicle("JH01CD3087")
+# v1 = vehicle("JH01AB5748")
+# v2 = vehicle("JH01CD3087")
 
-parking.park_vehicle(v1)
-parking.park_vehicle(v2)
+# parking.park_vehicle(v1)
+# parking.park_vehicle(v2)
 
-parking.show_slots()
+# parking.show_slots()
 
-parking.remove_vehicle("JH01AB5748")
+# parking.remove_vehicle("JH01AB5748")
 
-parking.show_slots()  
+# parking.show_slots()
+#   
+
+# The missing number
+
+numbers = [11, 22, 33, 44, 55, 66]
+
+n = 66
+
+total = n * (n + 1) // 2
+
+for num in numbers:
+    total -= num
+
+print(total)
