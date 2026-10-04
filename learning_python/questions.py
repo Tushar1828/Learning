@@ -118,13 +118,23 @@
 
 # The missing number
 
-numbers = [11, 22, 33, 44, 55, 66]
+# numbers = [11, 22, 33, 44, 55, 66]
 
-n = 66
+# n = 66
 
-total = n * (n + 1) // 2
+# total = n * (n + 1) // 2
 
-for num in numbers:
-    total -= num
+# for num in numbers:
+#     total -= num
 
-print(total)
+# print(total)
+
+# Merge two dictionaries and add common values
+a = {"x": 10, "y": 20}
+b = {"y": 30, "z": 40}
+
+result = a.copy()
+
+for key, value in b.items():
+    if key in result:
+        result[key] += value
