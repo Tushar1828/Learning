@@ -138,3 +138,7 @@ result = a.copy()
 for key, value in b.items():
     if key in result:
         result[key] += value
+
+    else:
+        result[key] = value
+print(result)
