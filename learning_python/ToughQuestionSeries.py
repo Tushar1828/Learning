@@ -288,16 +288,26 @@
 
 # Count even and odd numbers
 
-numbers = [1, 2, 3, 4, 5, 6]
+# numbers = [1, 2, 3, 4, 5, 6]
 
-even = 0
-odd = 0
+# even = 0
+# odd = 0
 
-for num in numbers:
-    if num % 2 == 0:
-        even += 1
-    else:
-        odd += 1
+# for num in numbers:
+#     if num % 2 == 0:
+#         even += 1
+#     else:
+#         odd += 1
 
-print("Even:", even)
-print("odd:", odd)
+# print("Even:", even)
+# print("odd:", odd)
+
+# Group Anagrams
+
+words = ["eat", "tea", "tan","ate","nat","bat"]
+
+groups = {}
+
+for word in words:
+
+    key = ''.join(sorted(word))
