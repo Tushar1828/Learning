@@ -1,0 +1,7 @@
+words = [ "tea", "tan","ate","nat","bat"]
+
+groups = {}
+
+for word in words:
+
+    key = ''.join(sorted(word))
