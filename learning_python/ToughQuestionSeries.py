@@ -304,7 +304,7 @@
 
 # Group Anagrams
 
-words = ["eat", "tea", "tan","ate","nat","bat"]
+words = [ "tea", "tan","ate","nat","bat"]
 
 groups = {}
 
