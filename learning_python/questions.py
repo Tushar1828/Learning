@@ -130,15 +130,27 @@
 # print(total)
 
 # Merge two dictionaries and add common values
-a = {"x": 10, "y": 20}
-b = {"y": 30, "z": 40}
+# a = {"x": 10, "y": 20}
+# b = {"y": 30, "z": 40}
 
-result = a.copy()
+# result = a.copy()
 
-for key, value in b.items():
-    if key in result:
-        result[key] += value
+# for key, value in b.items():
+#     if key in result:
+#         result[key] += value
 
-    else:
-        result[key] = value
+#     else:
+#         result[key] = value
+# print(result)
+
+# Convert list of tuples into dictionary
+
+data = [
+    ("name", "Tushar"),
+    ("age", 23),
+    ("city","Noida")
+]
+
+result = dict(data)
+
 print(result)

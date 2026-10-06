@@ -322,13 +322,14 @@
 
 # Sort list of tuples according to second value
 
-data = [
-    ("A", 1.4),
-    ("B", 1.3),
-    ("c", 1.6),
-    ("D", 1.1),
-]
+# data = [
+#     ("A", 1.4),
+#     ("B", 1.3),
+#     ("c", 1.6),
+#     ("D", 1.1),
+# ]
 
-result = sorted(data, key=lambda x: x[1])
+# result = sorted(data, key=lambda x: x[1])
 
-print(result)
+# print(result)
+
