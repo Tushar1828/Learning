@@ -304,17 +304,31 @@
 
 # Group Anagrams
 
-words = [ "tea", "tan","ate","nat","bat"]
+# words = [ "tea", "tan","ate","nat","bat"]
 
-groups = {}
+# groups = {}
 
-for word in words:
+# for word in words:
 
-    key = ''.join(sorted(word))
+#     key = ''.join(sorted(word))
 
-    if key not in groups:
-        groups[key] = []
+#     if key not in groups:
+#         groups[key] = []
 
-    groups[key].append(word)
+#     groups[key].append(word)
 
-print(list(groups.values()))
+# print(list(groups.values()))
+
+
+# Sort list of tuples according to second value
+
+data = [
+    ("A", 1.4),
+    ("B", 1.5),
+    ("c", 1.6),
+
+]
+
+result = sorted(data, key=lambda x: x[1])
+
+print(result)
