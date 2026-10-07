@@ -145,12 +145,21 @@
 
 # Convert list of tuples into dictionary
 
-data = [
-    ("name", "Tushar"),
-    ("age", 23),
-    ("city","Noida")
-]
+# data = [
+#     ("name", "Tushar"),
+#     ("age", 23),
+#     ("city","Noida")
+# ]
 
-result = dict(data)
+# result = dict(data)
 
-print(result)
+# print(result)
+
+# maximum occurring element
+
+numbers = [1, 2, 2, 3, 2, 4, 3]
+
+freq = {}
+
+for num in numbers:
+    freq[num] = freq.get(num, 0) + 1
