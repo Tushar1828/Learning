@@ -157,12 +157,22 @@
 
 # maximum occurring element
 
-numbers = [1, 2, 2, 3, 2, 4, 3]
+# numbers = [1, 2, 2, 3, 2, 4, 3]
 
-freq = {}
+# freq = {}
 
-for num in numbers:
-    freq[num] = freq.get(num, 0) + 1
+# for num in numbers:
+#     freq[num] = freq.get(num, 0) + 1
 
-maximum = max(freq, key=freq.get)
-print(maximum)
+# maximum = max(freq, key=freq.get)
+# print(maximum)
+
+# Two Sum
+numbers = [2, 6, 55, 999]
+target = 9
+
+seen = {}
+
+for i in range(len(numbers)):
+
+    needed = target - numbers[i]
