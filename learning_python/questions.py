@@ -163,3 +163,6 @@ freq = {}
 
 for num in numbers:
     freq[num] = freq.get(num, 0) + 1
+
+maximum = max(freq, key=freq.get)
+print(maximum)
