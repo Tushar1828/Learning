@@ -186,14 +186,25 @@
 #NUMBER-BASED LOGIC.
 #check armstrong number
 
-number =  153
-temp = number 
-total = 0
-digits = len(str(number))
+# number =  153
+# temp = number 
+# total = 0
+# digits = len(str(number))
 
-while temp > 0:
-    digit = temp % 10
-    total += digit ** digits
-    temp //= 10
+# while temp > 0:
+#     digit = temp % 10
+#     total += digit ** digits
+#     temp //= 10
 
-print(total == number)
+# print(total == number)
+
+#Count Digits Without Converting to String
+
+number = 67467778
+count = 0
+
+if number == 0:
+    count = 1
+else:
+    while number > 0:
+        
