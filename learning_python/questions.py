@@ -193,3 +193,7 @@ digits = len(str(number))
 
 while temp > 0:
     digit = temp % 10
+    total += digit ** digits
+    temp //= 10
+
+print(total == number)
