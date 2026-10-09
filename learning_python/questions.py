@@ -168,17 +168,28 @@
 # print(maximum)
 
 # Two Sum
-numbers = [2, 6, 55, 999]
-target = 9
+# numbers = [2, 6, 55, 999]
+# target = 9
 
-seen = {}
+# seen = {}
 
-for i in range(len(numbers)):
+# for i in range(len(numbers)):
 
-    needed = target - numbers[i]
+#     needed = target - numbers[i]
 
-    if needed in seen:
-        print(seen[needed], i)
-        break
+#     if needed in seen:
+#         print(seen[needed], i)
+#         break
 
-    seen[numbers[i]] = i
+#     seen[numbers[i]] = i
+
+#NUMBER-BASED LOGIC.
+#check armstrong number
+
+number =  153
+temp = number 
+total = 0
+digits = len(str(number))
+
+while temp > 0:
+    digit = temp % 10
