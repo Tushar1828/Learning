@@ -1,0 +1,14 @@
+numbers = [10, 39, 59, 88, 99, 109]
+target = 9
+
+seen = {}
+
+for i in range(len(numbers)):
+
+    needed = target - numbers[i]
+
+    if needed in seen:
+        print(seen[needed], i)
+        break
+
+    seen[numbers[i]] = i
