@@ -200,13 +200,22 @@
 
 #Count Digits Without Converting to String
 
-number = 67467778
-count = 0
+# number = 67467778
+# count = 0
 
-if number == 0:
-    count = 1
-else:
-    while number > 0:
-        number //= 10
-        count += 1
-print(count)
+# if number == 0:
+#     count = 1
+# else:
+#     while number > 0:
+#         number //= 10
+#         count += 1
+# print(count)
+
+# Fibonacci Using Recursion
+
+def fibonacci(n):
+    if n <= 1:
+        return n
+
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
