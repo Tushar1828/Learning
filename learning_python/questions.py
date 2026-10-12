@@ -224,14 +224,14 @@
 
 # Bubble Sort Without sort()
 
-# numbers = [5, 3, 4, 3, 2]
+numbers = [5, 3, 4, 3, 2]
 
-# for i in range(len(numbers)):
-#     for j in range(len(numbers) - i - 1):
-#         if numbers[j] > numbers[j + 1]:
-#             numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+for i in range(len(numbers)):
+    for j in range(len(numbers) - i - 1):
+        if numbers[j] > numbers[j + 1]:
+            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
 
-# print(numbers)
+print(numbers)
 
 # Search in a Rotated Sorted Array
 numbers = [4, 5, 6, 7, 0, 1, 2]
