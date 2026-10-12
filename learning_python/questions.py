@@ -253,5 +253,10 @@ while left <= right:
             right = mid - 1
         else:
             left = mid + 1
-    
-      
+    else:
+      if numbers[mid] < target <= numbers[right]:
+            left = mid + 1
+        
+            right = mid - 1
+
+print(answer)
