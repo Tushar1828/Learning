@@ -10,3 +10,15 @@
 # s2 = students("ali",49)
 # print(s2.name,s2.marks)
 
+# Method Overriding
+
+class Animal:
+    def sound(self):
+        print("Animal makes a sound")
+
+
+class Dog(Animal):
+    def sound(self):
+        print("Dog barks")
+
+
