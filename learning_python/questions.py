@@ -269,4 +269,10 @@ for i in range(len(number)):
 
     minimum = 1
 
-    
+    for j in range(i + 1, len(number)):
+        if number[j] < number[minimum]:
+            minimum = j
+
+    number[i], number[minimum] = number[minimum], number[i]
+
+print(number)
