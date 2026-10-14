@@ -263,7 +263,7 @@
 
 # Selection Sort
 
-number = [65, 43, 54, 13, 33]
+number = [65, 43, 54, 13, 33, 21, 22, 22,21]
 
 for i in range(len(number)):
 
