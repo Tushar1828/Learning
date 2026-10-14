@@ -261,3 +261,12 @@
 
 # print(answer)
 
+# Selection Sort
+
+number = [65, 43, 54, 13, 33]
+
+for i in range(len(number)):
+
+    minimum = 1
+
+    
