@@ -289,3 +289,10 @@
 
 # print(prefix)
 
+# Minimum Characters to Add at the Beginning to Make a Palindrome
+
+text = "ABC"
+count = 0
+
+while text != text[::-1]:
+    text = text[:-1]
