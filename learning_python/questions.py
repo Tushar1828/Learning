@@ -296,3 +296,7 @@ count = 0
 
 while text != text[::-1]:
     text = text[:-1]
+
+    count += 1
+
+print(count)
