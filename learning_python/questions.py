@@ -263,16 +263,25 @@
 
 # Selection Sort
 
-number = [65, 43, 54, 13, 33, 21, 22, 22,21]
+# number = [65, 43, 54, 13, 33, 21, 22, 22,21]
 
-for i in range(len(number)):
+# for i in range(len(number)):
 
-    minimum = 1
+#     minimum = 1
 
-    for j in range(i + 1, len(number)):
-        if number[j] < number[minimum]:
-            minimum = j
+#     for j in range(i + 1, len(number)):
+#         if number[j] < number[minimum]:
+#             minimum = j
 
-    number[i], number[minimum] = number[minimum], number[i]
+#     number[i], number[minimum] = number[minimum], number[i]
 
-print(number)
+# print(number)
+
+# Longest Common Prefix
+
+words = ["flower", "flow", "flight"]
+
+prefix = words[0]
+
+for word in words[1:]:
+    
