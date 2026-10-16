@@ -309,3 +309,9 @@ first = -1
 last = -1
 
 for i in range(len(numbers)):
+    if numbers[i] == target:
+        if first == -1:
+            first = i
+        last = i
+
+print([first, last])
