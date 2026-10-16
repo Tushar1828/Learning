@@ -291,12 +291,21 @@
 
 # Minimum Characters to Add at the Beginning to Make a Palindrome
 
-text = "ABC"
-count = 0
+# text = "ABC"
+# count = 0
 
-while text != text[::-1]:
-    text = text[:-1]
+# while text != text[::-1]:
+#     text = text[:-1]
 
-    count += 1
+#     count += 1
 
-print(count)
+# print(count)
+
+# First and Last Position
+numbers = [1, 2, 2, 2, 3, 4, 5]
+target = 2
+
+first = -1
+last = -1
+
+for i in range(len(numbers)):
