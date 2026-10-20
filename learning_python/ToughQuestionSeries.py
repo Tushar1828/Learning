@@ -333,3 +333,8 @@
 
 # print(result)
 
+#Encapsulation / OOPS.
+
+class Bank:
+    def __init__(self, balance):
+        self.__balance = balance
