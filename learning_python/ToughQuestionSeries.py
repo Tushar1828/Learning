@@ -373,5 +373,4 @@ class Child(Parent):
     def __init__(self):
         print("Child constructor")
         super().__init__()
-
 obj = Child()
