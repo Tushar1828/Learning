@@ -344,3 +344,5 @@ class Bank:
 
 account = Bank(8000)
 
+print(account.get_balance())
+print(account._Bank__balance)
