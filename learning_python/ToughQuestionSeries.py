@@ -335,14 +335,22 @@
 
 #Encapsulation / OOPS.
 
-class Bank:
-    def __init__(self, balance):
-        self.__balance = balance
+# class Bank:
+#     def __init__(self, balance):
+#         self.__balance = balance
 
-    def get_balance(self):
-        return self.__balance
+#     def get_balance(self):
+#         return self.__balance
 
-account = Bank(8000)
+# account = Bank(8000)
 
-print(account.get_balance())
-print(account._Bank__balance)
+# print(account.get_balance())
+# print(account._Bank__balance)
+
+# Class Variable vs Instance Variable
+
+class Employee:
+    company = "ABC"
+
+    def __init__(self, name):
+        self.name = name
