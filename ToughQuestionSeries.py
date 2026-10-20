@@ -1,0 +1,348 @@
+# The longest consecutive sequence
+
+# numbers = [100, 4, 500, 29, 85, 1, 3, 2]
+
+# num_set = set(numbers)
+# longest = 0
+
+# for num in num_set:
+
+#     if num - 1 not in num_set:
+
+#         current = num
+#         length = 1
+
+#     while current + 1 in num_set:
+#         current += 1
+#         length +=1
+
+#     longest = max(longest,length)
+
+# print(longest)
+
+# Maximum subarray sum
+
+# numbers = [-2, 1, -3, 4, -1, 2, -4, 5, 3]
+# current = numbers[0]
+# maximum = numbers[0]
+
+# for i in range(1, len(numbers)):
+
+#     current = max (numbers [i], current + numbers[i])
+
+#     maximum = max(maximum, current)
+
+# print(maximum)
+
+#WAP TO PRINT THIRD,FIFTH AND SEVENTH ELEMENT FROM A LIST
+#USING ENUMERATE FUNCTION.
+
+# l = [1, 2, 3, 4, 5, 6, 7, 8]
+
+# for i, item in enumerate(l):
+#      if i== 2 or i == 5 or i == 7:
+#          print(item)
+
+
+# longest palindrome substring
+
+# text = "babad"
+
+# longest = ""
+
+# for i in range(len(text)):
+
+#     for j in range(i + 1, len(text) + 1):
+
+#         substring = text[i:j]
+
+#         if substring == substring[::-1]:
+
+#             if len(substring) > len(longest):
+#                 longest = substring
+
+# print(longest)
+
+# all subarrays with given sum
+
+# numbers = [1, 2, 3, 6, 2]
+# target = 5
+
+# for i in range(len(numbers)):
+
+#     total = 0
+
+#     for j in range(i, len(numbers)):
+#         total += numbers[j]
+
+#         if total == target:
+#             print(numbers[i:j+1])
+
+# majority element
+
+# numbers = [32, 45, 76, 99, 57]
+
+# candidate = None
+# count = 0
+
+# for num in numbers:
+
+#     if count == 0:
+#         candidate = num
+
+#     if num == candidate:
+#         count += 1
+
+#     else:
+#         count  -= 1
+
+# print(candidate)
+
+# Find two numbers whose sum is target
+
+# numbers = [2, 7, 11, 15]
+# target = 9
+
+# seen = {}
+
+# for num in numbers:
+
+#     required = target - num
+
+#     if required in seen:
+#         print(required, num)
+#         break
+
+#     seen[num] = True
+
+#   elements greater than all elements to their right
+
+# numbers = [16, 20, 4, 6, 8]
+
+# result = []
+
+# for i in range(len(numbers)):
+#     greater = True
+
+#     for i in range(len(numbers)):
+
+#         greater = True
+
+#         for j in range(i + 1, len(numbers)):
+
+#             if numbers[i] <= numbers[j]:
+#                 greater = False
+#                 break
+
+#         if greater:
+#             result.append(numbers[i])
+
+# print(result)
+
+# the first missing positive number
+
+# numbers = [3, 4, -1, 1]
+
+# positive = set(numbers)
+
+# number = 1
+
+# while number in positive:
+#     number += 1
+
+# print(number)
+
+# common characters between two strings
+
+# str1 = "hello"
+# str2 = "world"
+
+# common = ""
+
+# for ch in str1:
+
+#     if ch in str2 and ch not in common:
+#         common += ch
+
+# print(common)
+
+# leaders in an array
+
+# numbers = [16, 17, 4, 4, 6, 7, 8]
+
+# leaders = []
+
+# maximum = numbers[-1]
+# leaders.append(maximum)
+
+# for i in range(len(numbers) - 2, -1, -1):
+
+#     if numbers[i] > maximum:
+#         maximum = numbers[i]
+#         leaders.append(numbers[i])
+
+# leaders.reverse()
+
+# print(leaders)
+
+# Find longest substring containing only unique characters.
+
+# text = "pwwkew"
+
+# seen = set()
+# left = 0
+# longest = 0
+
+# for right in range(len(text)):
+
+#     while text[right] in seen:
+#         seen.remove(text[left])
+#         left +=1
+
+#     seen.add(text[right])
+
+#     longest = max(longest, right - left + 1)
+
+# print(longest)
+
+# E-commerce Order System
+
+# class product:
+
+#     def __init__(self, name, price, quantity):
+#         self.name = name
+#         self.price= price
+#         self.quantity = quantity
+
+#     def total_price(self):
+#         return self.price * self.quantity
+
+# class order:
+
+#     def __init__(self, customer):
+#         self.customer = customer
+#         self.products = []
+
+#     def add_product(self, product):
+#         self.products.append(product)
+
+#     def calculate_total(self):
+
+#         total = 0
+
+#         for product in self.products:
+#             total += product.total_price()
+
+#         return total 
+
+#     def apply_discout(self, discount):
+
+#         total = self.calculate_total()
+
+#         return total - (total * discount / 100)
+# order = order("Tushar")
+
+# p1 = product("laptop", 50000, 1)
+# p2 = product("Mouse", 1000, 2)
+# p3 = product("keyboard", 2000, 3)
+
+
+# order.add_product(p1)
+# order.add_product(p2)
+# order.add_product(p3)
+
+# print("Total:", order.calculate_total())
+
+# print("Final:", order.apply_discout(50))
+
+# Rearrange positive and negative numbers
+
+# numbers = [1, -2, 3, -4, 5, -6, -28,-49,99,1010]
+
+# positive = []
+# negative = []
+
+# for num in numbers:
+
+#     if num >= 0:
+#         positive.append(num)
+#     else:
+#         negative.append(num)
+
+# result = positive + negative
+
+# print(result)
+
+# common elements between two list
+
+# a = [1, 2, 3, 4]
+# b = [3, 4, 5, 6]
+
+# common = []
+
+# for num in a:
+#     if num in b:
+#         common.append(num)
+
+# print(common)
+
+# Count even and odd numbers
+
+# numbers = [1, 2, 3, 4, 5, 6]
+
+# even = 0
+# odd = 0
+
+# for num in numbers:
+#     if num % 2 == 0:
+#         even += 1
+#     else:
+#         odd += 1
+
+# print("Even:", even)
+# print("odd:", odd)
+
+# Group Anagrams
+
+# words = [ "tea", "tan","ate","nat","bat"]
+
+# groups = {}
+
+# for word in words:
+
+#     key = ''.join(sorted(word))
+
+#     if key not in groups:
+#         groups[key] = []
+
+#     groups[key].append(word)
+
+# print(list(groups.values()))
+
+
+# Sort list of tuples according to second value
+
+# data = [
+#     ("A", 1.4),
+#     ("B", 1.3),
+#     ("c", 1.6),
+#     ("D", 1.1),
+# ]
+
+# result = sorted(data, key=lambda x: x[1])
+
+# print(result)
+
+#Encapsulation / OOPS.
+
+class Bank:
+    def __init__(self, balance):
+        self.__balance = balance
+
+    def get_balance(self):
+        return self.__balance
+
+account = Bank(8000)
+
+print(account.get_balance())
+print(account._Bank__balance)
