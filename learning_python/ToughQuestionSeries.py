@@ -354,3 +354,12 @@ class Employee:
 
     def __init__(self, name):
         self.name = name
+
+e1 = Employee("Aman")
+e2 = Employee("Riya")
+
+e1.company = "XYZ"
+
+print(e1.company)
+print(e2.company)
+print(Employee.company)
