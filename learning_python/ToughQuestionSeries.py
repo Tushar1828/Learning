@@ -349,17 +349,29 @@
 
 # Class Variable vs Instance Variable
 
-class Employee:
-    company = "ABC"
+# class Employee:
+#     company = "ABC"
 
-    def __init__(self, name):
-        self.name = name
+#     def __init__(self, name):
+#         self.name = name
 
-e1 = Employee("Aman")
-e2 = Employee("Riya")
+# e1 = Employee("Aman")
+# e2 = Employee("Riya")
 
-e1.company = "XYZ"
+# e1.company = "XYZ"
 
-print(e1.company)
-print(e2.company)
-print(Employee.company)
+# print(e1.company)
+# print(e2.company)
+# print(Employee.company)
+
+# Constructor Inheritance
+class Parent:
+    def __init__(self):
+        print("Parent constructor")
+
+class Child(Parent):
+    def __init__(self):
+        print("Child constructor")
+        super().__init__()
+
+obj = Child()
