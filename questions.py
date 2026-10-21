@@ -291,12 +291,64 @@
 
 # Minimum Characters to Add at the Beginning to Make a Palindrome
 
-text = "ABC"
-count = 0
+# text = "ABC"
+# count = 0
 
-while text != text[::-1]:
-    text = text[:-1]
+# while text != text[::-1]:
+#     text = text[:-1]
 
-    count += 1
+#     count += 1
 
-print(count)
+# print(count)
+
+# First and Last Position
+# numbers = [1, 2, 2, 2, 3, 4, 5]
+# target = 2
+
+# first = -1
+# last = -1
+
+# for i in range(len(numbers)):
+#     if numbers[i] == target:
+#         if first == -1:
+#             first = i
+#         last = i
+
+# print([first, last])
+
+# the pair whose sum equals the target
+
+# def two_sum(arr, target):
+#     seen = {}
+
+#     for i,num in enumerate(arr):
+#           complement = target - num
+
+#           if complement in seen:
+#             return [seen[complement], i]
+
+#           seen[num] = i
+
+#     if complement in seen:
+#             return [seen[complement], i]
+
+#     seen[num] = i
+
+# Merge Overlapping Intervals 
+
+def merge_intervals(intervals):
+    intervals.sort()
+    result = []
+
+    for start, end in intervals:
+        if not result or start > result[-1][1]:
+            result.append([start, end])
+
+        else:
+            result[-1][1] = max(result[-1][1], end)
+
+    return result
+print(merge_intervals([[1, 3], [2, 6],
+                       [8, 10], [9, 12]]))
+
+
