@@ -348,6 +348,7 @@ def merge_intervals(intervals):
             result[-1][1] = max(result[-1][1], end)
 
     return result
-
+print(merge_intervals([[1, 3], [2, 6],
+                       [8, 10], [9, 12]]))
 
 
