@@ -329,5 +329,11 @@ def two_sum(arr, target):
 
           seen[num] = i
 
+    if complement in seen:
+            return [seen[complement], i]
+
+    seen[num] = i
+
+
 
 
