@@ -302,16 +302,24 @@
 # print(count)
 
 # First and Last Position
-numbers = [1, 2, 2, 2, 3, 4, 5]
-target = 2
+# numbers = [1, 2, 2, 2, 3, 4, 5]
+# target = 2
 
-first = -1
-last = -1
+# first = -1
+# last = -1
 
-for i in range(len(numbers)):
-    if numbers[i] == target:
-        if first == -1:
-            first = i
-        last = i
+# for i in range(len(numbers)):
+#     if numbers[i] == target:
+#         if first == -1:
+#             first = i
+#         last = i
 
-print([first, last])
+# print([first, last])
+
+# the pair whose sum equals the target
+
+def two_sum(arr, target):
+    seen = {}
+
+    for i,num in enumerate(arr):
+          complement = target - num
