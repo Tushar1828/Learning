@@ -318,22 +318,26 @@
 
 # the pair whose sum equals the target
 
-def two_sum(arr, target):
-    seen = {}
+# def two_sum(arr, target):
+#     seen = {}
 
-    for i,num in enumerate(arr):
-          complement = target - num
+#     for i,num in enumerate(arr):
+#           complement = target - num
 
-          if complement in seen:
-            return [seen[complement], i]
+#           if complement in seen:
+#             return [seen[complement], i]
 
-          seen[num] = i
+#           seen[num] = i
 
-    if complement in seen:
-            return [seen[complement], i]
+#     if complement in seen:
+#             return [seen[complement], i]
 
-    seen[num] = i
+#     seen[num] = i
 
+# Merge Overlapping Intervals 
 
+def merge_intervals(intervals):
+    intervals.sort()
+    result = []
 
 
