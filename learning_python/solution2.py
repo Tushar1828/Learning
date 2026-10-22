@@ -25,3 +25,9 @@
 n = 199
 digits = str(n)
 total = 0
+
+for digit in digits:
+   total += int(digit) ** len(digits)
+
+if total == n:
+   print("Armstrong Number") 
