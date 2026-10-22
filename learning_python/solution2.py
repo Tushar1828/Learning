@@ -22,14 +22,24 @@
 
 # a number is an Armstrong number
 
-n = 199
-digits = str(n)
-total = 0
+# n = 199
+# digits = str(n)
+# total = 0
 
-for digit in digits:
-   total += int(digit) ** len(digits)
+# for digit in digits:
+#    total += int(digit) ** len(digits)
 
-if total == n:
-   print("Armstrong Number") 
-else:
-   print("Not Armstrong")
+# if total == n:
+#    print("Armstrong Number") 
+# else:
+#    print("Not Armstrong")
+
+# the second-largest distinct element without sort()
+nums = [10, 5, 20, 8, 15]
+
+first = second = float('-inf')
+
+for n in nums:
+    if n > first:
+        second = first
+        first = n
