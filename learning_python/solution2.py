@@ -31,3 +31,5 @@ for digit in digits:
 
 if total == n:
    print("Armstrong Number") 
+else:
+   print("Not Armstrong")
