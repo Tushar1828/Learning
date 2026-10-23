@@ -36,12 +36,20 @@
 
 # the third-largest distinct element
 
-nums = [10, 5, 20, 8, 15, 20]
+# nums = [10, 5, 20, 8, 15, 20]
 
-unique = list(set(nums))
-unique.sort(reverse=True)
+# unique = list(set(nums))
+# unique.sort(reverse=True)
 
-if len(unique) >= 3:
-    print(unique[2])
-else:
-    print("Not enough elements")
+# if len(unique) >= 3:
+#     print(unique[2])
+# else:
+#     print("Not enough elements")
+
+
+# Rotate a list to the right by K positions
+
+nums = [1, 2, 3, 4, 5]
+k = 2
+
+k = k % len(nums)
