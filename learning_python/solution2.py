@@ -40,3 +40,8 @@ nums = [10, 5, 20, 8, 15, 20]
 
 unique = list(set(nums))
 unique.sort(reverse=True)
+
+if len(unique) >= 3:
+    print(unique[2])
+else:
+    print("Not enough elements")
