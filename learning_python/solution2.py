@@ -34,12 +34,9 @@
 # else:
 #    print("Not Armstrong")
 
-# the second-largest distinct element without sort()
-nums = [10, 5, 20, 8, 15]
+# the third-largest distinct element
 
-first = second = float('-inf')
+nums = [10, 5, 20, 8, 15, 20]
 
-for n in nums:
-    if n > first:
-        second = first
-        first = n
+unique = list(set(nums))
+unique.sort(reverse=True)
