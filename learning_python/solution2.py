@@ -49,10 +49,19 @@
 
 # Rotate a list to the right by K positions
 
-nums = [1, 2, 3, 4, 5]
-k = 2
+# nums = [1, 2, 3, 4, 5]
+# k = 2
 
-k = k % len(nums)
-result = nums[-k:] + nums[:-k]
+# k = k % len(nums)
+# result = nums[-k:] + nums[:-k]
 
-print(result)
+# print(result)
+
+#Demonstrate polymosrphism
+
+def area(self):
+    return 3.14 * 5 * 5
+
+class square:
+    def area(self):
+        return 4 * 4
