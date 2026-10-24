@@ -59,15 +59,23 @@
 
 #Demonstrate polymosrphism
 
-class Circle:
- def area(self):
-    return 3.14 * 5 * 5
+# class Circle:
+#  def area(self):
+#     return 3.14 * 5 * 5
 
-class square:
-    def area(self):
-        return 4 * 4
+# class square:
+#     def area(self):
+#         return 4 * 4
 
-shapes = [Circle(), square()]
+# shapes = [Circle(), square()]
 
-for shapes in shapes:
-    print(shapes.area())
+# for shapes in shapes:
+#     print(shapes.area())
+
+# all permutations of a string
+
+from itertools import permutations
+
+s = "abc"
+
+for p in permutations(s):
