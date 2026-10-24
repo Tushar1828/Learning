@@ -59,9 +59,15 @@
 
 #Demonstrate polymosrphism
 
-def area(self):
+class Circle:
+ def area(self):
     return 3.14 * 5 * 5
 
 class square:
     def area(self):
         return 4 * 4
+
+shapes = [Circle(), square()]
+
+for shapes in shapes:
+    print(shapes.area())
