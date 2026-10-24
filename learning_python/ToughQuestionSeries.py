@@ -364,13 +364,13 @@
 # print(e2.company)
 # print(Employee.company)
 
-# Constructor Inheritance
-class Parent:
-    def __init__(self):
-        print("Parent constructor")
+# # Constructor Inheritance
+# class Parent:
+#     def __init__(self):
+#         print("Parent constructor")
 
-class Child(Parent):
-    def __init__(self):
-        print("Child constructor")
-        super().__init__()
-obj = Child()
+# class Child(Parent):
+#     def __init__(self):
+#         print("Child constructor")
+#         super().__init__()
+# obj = Child()
