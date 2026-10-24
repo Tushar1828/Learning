@@ -74,9 +74,18 @@
 
 # all permutations of a string
 
-from itertools import permutations
+# from itertools import permutations
 
-s = "abc"
+# s = "abc"
 
-for p in permutations(s):
-    print("".join(p))
+# for p in permutations(s):
+#     print("".join(p))
+
+# the sum of digits using recursion
+
+def digit_sum(n):
+    if n == 0:
+        return 0
+
+    return n % 10 + digit_sum(n // 10)
+print(digit_sum(12345))
