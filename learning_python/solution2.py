@@ -91,12 +91,20 @@
 # print(digit_sum(12345))
 
 # whether a list is sorted
-nums = [1, 2, 3, 5, 8]
+# nums = [1, 2, 3, 5, 8]
 
-is_sorted = True
-for i in range(len(nums) - 1):
-    if nums[i] > nums[i + 1]:
-        is_sorted = False
-        break
+# is_sorted = True
+# for i in range(len(nums) - 1):
+#     if nums[i] > nums[i + 1]:
+#         is_sorted = False
+#         break
 
-print(is_sorted)
+# print(is_sorted)
+
+# whether a number is a perfect number
+n = 28
+total = 0
+
+for i in range(1, n):
+    if n % i == 0:
+        total += i
