@@ -83,9 +83,14 @@
 
 # the sum of digits using recursion
 
-def digit_sum(n):
-    if n == 0:
-        return 0
+# def digit_sum(n):
+#     if n == 0:
+#         return 0
 
-    return n % 10 + digit_sum(n // 10)
-print(digit_sum(12345))
+#     return n % 10 + digit_sum(n // 10)
+# print(digit_sum(12345))
+
+# whether a list is sorted
+nums = [1, 2, 3, 5, 8]
+
+is_sorted = True
