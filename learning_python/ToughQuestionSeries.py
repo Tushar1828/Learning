@@ -374,3 +374,20 @@
 #         print("Child constructor")
 #         super().__init__()
 # obj = Child()
+
+# Number and mathematical problems
+def divisor_sum(n):
+    total = 0
+
+    for i in range(1, n):
+        if n % i == 0:
+            total += i
+
+    return total
+
+a, b = 220, 284
+
+if divisor_sum(a) == b and divisor_sum(b) == a:
+    print("Amicable Numbers")
+else:
+    print("Not Amicable")
