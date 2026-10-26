@@ -335,14 +335,22 @@
 
 #Encapsulation / OOPS.
 
-class Bank:
-    def __init__(self, balance):
-        self.__balance = balance
+# class Bank:
+#     def __init__(self, balance):
+#         self.__balance = balance
 
-    def get_balance(self):
-        return self.__balance
+#     def get_balance(self):
+#         return self.__balance
 
-account = Bank(8000)
+# account = Bank(8000)
 
-print(account.get_balance())
-print(account._Bank__balance)
+# print(account.get_balance())
+# print(account._Bank__balance)
+
+# whether two numbers are amicable
+
+def divisor_sum(n):
+    total = 0
+
+for i in range(1, n):
+    
