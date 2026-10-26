@@ -360,5 +360,6 @@ def divisor_sum(n):
 
 a, b = 220, 284
 
-
+if divisor_sum(a) == b and divisor_sum(b) == a:
+    print("Amicable Numbers")
 
