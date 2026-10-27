@@ -347,8 +347,35 @@
 # print(account.get_balance())
 # print(account._Bank__balance)
 
-# whether two numbers are amicable
+# Class Variable vs Instance Variable
 
+# class Employee:
+#     company = "ABC"
+
+#     def __init__(self, name):
+#         self.name = name
+
+# e1 = Employee("Aman")
+# e2 = Employee("Riya")
+
+# e1.company = "XYZ"
+
+# print(e1.company)
+# print(e2.company)
+# print(Employee.company)
+
+# # Constructor Inheritance
+# class Parent:
+#     def __init__(self):
+#         print("Parent constructor")
+
+# class Child(Parent):
+#     def __init__(self):
+#         print("Child constructor")
+#         super().__init__()
+# obj = Child()
+
+# Number and mathematical problems
 def divisor_sum(n):
     total = 0
 
@@ -364,4 +391,3 @@ if divisor_sum(a) == b and divisor_sum(b) == a:
     print("Amicable Numbers")
 else:
     print("Not Amicable")
-
