@@ -402,3 +402,11 @@ def majority_element(nums):
 
         if n == candidate:
             count += 1
+
+        else:
+            count -= 1
+
+    return candidate
+
+
+print(majority_element([2, 2, 1, 1, 2, 2, 2]))
