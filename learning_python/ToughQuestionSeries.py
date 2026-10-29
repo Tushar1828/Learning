@@ -416,3 +416,8 @@
 class Developer:
     def work(self):
         print ("writing code")
+
+class Tester:
+    def work(self):
+        print("Testing software ")
+        
