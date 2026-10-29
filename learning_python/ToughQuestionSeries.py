@@ -420,4 +420,12 @@ class Developer:
 class Tester:
     def work(self):
         print("Testing software ")
-        
+
+def perform_work(employee):
+    employee.work()
+
+perform_work(Developer ())
+
+perform_work(Tester())
+
+
