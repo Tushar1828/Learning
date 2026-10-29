@@ -413,19 +413,27 @@
 
 # Demonstrate runtime polymorphism.
 
-class Developer:
-    def work(self):
-        print ("writing code")
+# class Developer:
+#     def work(self):
+#         print ("writing code")
 
-class Tester:
-    def work(self):
-        print("Testing software ")
+# class Tester:
+#     def work(self):
+#         print("Testing software ")
 
-def perform_work(employee):
-    employee.work()
+# def perform_work(employee):
+#     employee.work()
 
-perform_work(Developer ())
+# perform_work(Developer ())
 
-perform_work(Tester())
+# perform_work(Tester())
 
+# Implement operator overloading using __add__().
+
+class Number:
+    def __init__(self, value):
+        self.value = value
+
+    def __add__(self, other):
+        return Number(self.value + other.value)
 
