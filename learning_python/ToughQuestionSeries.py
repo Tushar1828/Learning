@@ -430,15 +430,25 @@
 
 # Implement operator overloading using __add__().
 
-class Number:
-    def __init__(self, value):
-        self.value = value
+# class Number:
+#     def __init__(self, value):
+#         self.value = value
 
-    def __add__(self, other):
-        return Number(self.value + other.value)
+#     def __add__(self, other):
+#         return Number(self.value + other.value)
 
-n1 = Number(10)
-n2 = Number(20)
+# n1 = Number(10)
+# n2 = Number(20)
 
-result = n1 + n2
-print(result.value)
+# result = n1 + n2
+# print(result.value)
+
+# Implement method overriding
+
+class Bank:
+    def interest_rate(self):
+        return 5
+
+class SBI(Bank):
+    def interest_rate(self):
+        return 7
