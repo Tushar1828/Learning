@@ -452,3 +452,6 @@ class Bank:
 class SBI(Bank):
     def interest_rate(self):
         return 7
+
+b = SBI()
+print(b.interest_rate) 
