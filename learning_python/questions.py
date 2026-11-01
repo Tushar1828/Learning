@@ -363,3 +363,11 @@ class Employee:
 e = Employee("Tushar", 199887)
 print(e)
 
+# equilibrium index
+arr = [1, 3, 5, 2, 2]
+
+total = sum(arr)
+left_sum = 0
+
+for i, num in enumerate(arr):
+    right_sum = total - left_sum - num
