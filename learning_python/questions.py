@@ -357,5 +357,9 @@ class Employee:
         self.name = name
         self.salary = salary
 
-    
+    def __str__(self):
+        return f"{self.name}: {self.salary}"
+
+e = Employee("Tushar", 199887)
+print(e)
 
