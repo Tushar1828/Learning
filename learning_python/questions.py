@@ -336,19 +336,26 @@
 
 # Merge Overlapping Intervals 
 
-def merge_intervals(intervals):
-    intervals.sort()
-    result = []
+# def merge_intervals(intervals):
+#     intervals.sort()
+#     result = []
 
-    for start, end in intervals:
-        if not result or start > result[-1][1]:
-            result.append([start, end])
+#     for start, end in intervals:
+#         if not result or start > result[-1][1]:
+#             result.append([start, end])
 
-        else:
-            result[-1][1] = max(result[-1][1], end)
+#         else:
+#             result[-1][1] = max(result[-1][1], end)
 
-    return result
-print(merge_intervals([[1, 3], [2, 6],
-                       [8, 10], [9, 12]]))
+#     return result
+# print(merge_intervals([[1, 3], [2, 6],
+#                        [8, 10], [9, 12]]))
 
+# a custom string representation using __str__()
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    
 
