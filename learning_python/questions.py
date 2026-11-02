@@ -388,6 +388,8 @@ for num in nums:
         count = 1
         while num + count in nums:
             count += 1
-            
+        longest = max(longest, count)
+
+print(longest)   
 
 
