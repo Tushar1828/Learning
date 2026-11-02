@@ -352,28 +352,36 @@
 #                        [8, 10], [9, 12]]))
 
 # a custom string representation using __str__()
-class Employee:
-    def __init__(self, name, salary):
-        self.name = name
-        self.salary = salary
+# class Employee:
+#     def __init__(self, name, salary):
+#         self.name = name
+#         self.salary = salary
 
-    def __str__(self):
-        return f"{self.name}: {self.salary}"
+#     def __str__(self):
+#         return f"{self.name}: {self.salary}"
 
-e = Employee("Tushar", 199887)
-print(e)
+# e = Employee("Tushar", 199887)
+# print(e)
 
-# equilibrium index
-arr = [1, 3, 5, 2, 2]
+# # equilibrium index
+# arr = [1, 3, 5, 2, 2]
 
-total = sum(arr)
-left_sum = 0
+# total = sum(arr)
+# left_sum = 0
 
-for i, num in enumerate(arr):
-    right_sum = total - left_sum - num
+# for i, num in enumerate(arr):
+#     right_sum = total - left_sum - num
 
-    if left_sum == right_sum:
-        print(i)
-        break
+#     if left_sum == right_sum:
+#         print(i)
+#         break
 
-    left_sum += num
+#     left_sum += num
+
+# the longest consecutive sequence
+arr = [200, 3, 100, 2, 5, 6]
+nums = set(arr)
+longest  = 0
+
+
+
