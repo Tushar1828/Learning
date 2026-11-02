@@ -383,5 +383,11 @@ arr = [200, 3, 100, 2, 5, 6]
 nums = set(arr)
 longest  = 0
 
+for num in nums:
+    if num - 1 not in nums:
+        count = 1
+        while num + count in nums:
+            count += 1
+            
 
 
