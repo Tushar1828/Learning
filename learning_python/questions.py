@@ -405,3 +405,13 @@ for i in range(len(arr)):
 
             result.append(product)
 print(result)
+
+# the first repeated element
+arr = [10, 20, 30, 20, 40, 10]
+seen = set()
+
+for num in arr:
+    if num in seen:
+        print(num)
+        break
+    seen.add(num)
