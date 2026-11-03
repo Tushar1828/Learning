@@ -415,3 +415,4 @@ for num in arr:
         print(num)
         break
     seen.add(num)
+    
