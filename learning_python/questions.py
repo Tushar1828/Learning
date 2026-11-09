@@ -434,16 +434,27 @@
 # print(d)
 # Two Numbers Whose Sum Equals Target
 
-a = [2, 7, 11, 15]
-target = 9
+# a = [2, 7, 11, 15]
+# target = 9
 
-d = {}
+# d = {}
 
-for i, num in enumerate(a):
-    diff = target - num
+# for i, num in enumerate(a):
+#     diff = target - num
 
-    if diff in d:
-         print(d[diff], i)
-         break
+#     if diff in d:
+#          print(d[diff], i)
+#          break
 
-    d[num] = i
+#     d[num] = i
+
+number = 67467778
+count = 0
+
+if number == 0:
+    count = 1
+else:
+    while number > 0:
+        number //= 10
+        count += 1
+print(count)
