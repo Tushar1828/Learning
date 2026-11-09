@@ -443,3 +443,7 @@ for i, num in enumerate(a):
     diff = target - num
 
     if diff in d:
+         print(d[diff], i)
+         break
+
+    d[num] = i
