@@ -438,3 +438,8 @@ a = [2, 7, 11, 15]
 target = 9
 
 d = {}
+
+for i, num in enumerate(a):
+    diff = target - num
+
+    if diff in d:
