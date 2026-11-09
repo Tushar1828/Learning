@@ -416,7 +416,19 @@
 #         break
 #     seen.add(num)
 
-a = [1, 2, 3, 2, 4, 3]
+# a = [1, 2, 3, 2, 4, 3]
 
-dup = []
-for i in a:    
+# dup = []
+# for i in a:
+#     if a.count(i) > 1 and i not in dup:
+#         dup.append(i)
+
+# print(dup) 
+
+s = "programming"
+d = {}
+
+for i in s:
+    d[i] = d.get(i, 0) + 1
+
+print(d)
