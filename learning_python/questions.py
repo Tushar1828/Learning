@@ -393,26 +393,30 @@
 # print(longest)   
 
 # the product of all elements except the current element
-arr = [1, 2, 3, 4]
-result = []
+# arr = [1, 2, 3, 4]
+# result = []
 
-for i in range(len(arr)):
-    product = 1
+# for i in range(len(arr)):
+#     product = 1
 
-    for j in range(len(arr)):
-        if i != j:
-            product *= arr[j]  
+#     for j in range(len(arr)):
+#         if i != j:
+#             product *= arr[j]  
 
-            result.append(product)
-print(result)
+#             result.append(product)
+# print(result)
 
 # the first repeated element
-arr = [10, 20, 30, 20, 40, 10]
-seen = set()
+# arr = [10, 20, 30, 20, 40, 10]
+# seen = set()
 
-for num in arr:
-    if num in seen:
-        print(num)
-        break
-    seen.add(num)
-    
+# for num in arr:
+#     if num in seen:
+#         print(num)
+#         break
+#     seen.add(num)
+
+a = [1, 2, 3, 2, 4, 3]
+
+dup = []
+for i in a:    
