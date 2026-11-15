@@ -445,13 +445,19 @@
 
 # Implement method overriding
 
-class Bank:
-    def interest_rate(self):
-        return 5
+# class Bank:
+#     def interest_rate(self):
+#         return 5
 
-class SBI(Bank):
-    def interest_rate(self):
-        return 7
+# class SBI(Bank):
+#     def interest_rate(self):
+#         return 7
 
-b = SBI()
-print(b.interest_rate) 
+# b = SBI()
+# print(b.interest_rate) 
+
+# Subarray Sum Equals K
+def subarray_sum(nums, k):
+    freq = {0: 1}
+    total = 0
+    count = 0
