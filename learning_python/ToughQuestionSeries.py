@@ -466,3 +466,10 @@ def subarray_sum(nums, k):
         total += num
 
         count += freq.get(total - k, 0)
+
+    freq[total] = freq.get(total, 0) + 1
+
+    return count
+
+
+print(subarray_sum([1, 2, 3], 3))
