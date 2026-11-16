@@ -457,19 +457,26 @@
 # print(b.interest_rate) 
 
 # Subarray Sum Equals K
-def subarray_sum(nums, k):
-    freq = {0: 1}
-    total = 0
-    count = 0
+# def subarray_sum(nums, k):
+#     freq = {0: 1}
+#     total = 0
+#     count = 0
 
-    for num in nums:
-        total += num
+#     for num in nums:
+#         total += num
 
-        count += freq.get(total - k, 0)
+#         count += freq.get(total - k, 0)
 
-    freq[total] = freq.get(total, 0) + 1
+#     freq[total] = freq.get(total, 0) + 1
 
-    return count
+#     return count
 
 
-print(subarray_sum([1, 2, 3], 3))
+# print(subarray_sum([1, 2, 3], 3))
+
+# leaders in an array
+
+arr = [16, 17, 4, 3, 5, 2]
+
+leaders = []
+maximum = float('-inf')
