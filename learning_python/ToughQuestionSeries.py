@@ -483,3 +483,7 @@ maximum = float('-inf')
 
 for num in reversed(arr):
     if num > maximum:
+          leaders.append(num)
+    maximum = num
+
+print(leaders[::-1])
