@@ -476,14 +476,21 @@
 
 # leaders in an array
 
-arr = [16, 17, 4, 3, 5, 2]
+# arr = [16, 17, 4, 3, 5, 2]
 
-leaders = []
-maximum = float('-inf')
+# leaders = []
+# maximum = float('-inf')
 
-for num in reversed(arr):
-    if num > maximum:
-          leaders.append(num)
-    maximum = num
+# for num in reversed(arr):
+#     if num > maximum:
+#           leaders.append(num)
+#     maximum = num
 
-print(leaders[::-1])
+# print(leaders[::-1])
+
+# one string is a rotation of another
+
+s1 = "ABCD"
+s2 = "CDAB"
+
+if len(s1) == len(s2) and s2 in s1 + s1:
