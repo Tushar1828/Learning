@@ -515,3 +515,8 @@
 nums = [10, 5, 20, 8, 15]
 
 first = second = float('-inf')
+
+for n in nums:
+    if n > first:
+        second = first
+        first = n
