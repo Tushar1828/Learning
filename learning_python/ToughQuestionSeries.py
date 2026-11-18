@@ -526,3 +526,7 @@ for n in nums:
 
 if second == float('-inf'):
     print("No second-largest element")
+
+else:
+    print(second)
+    
