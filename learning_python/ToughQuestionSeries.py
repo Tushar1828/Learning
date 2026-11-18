@@ -490,13 +490,13 @@
 
 # one string is a rotation of another
 
-s1 = "ABCD"
-s2 = "CDAB"
+# s1 = "ABCD"
+# s2 = "CDAB"
 
-if len(s1) == len(s2) and s2 in s1 + s1:
-     print("Rotation")
-else:
-    print("Not Rotation")
+# if len(s1) == len(s2) and s2 in s1 + s1:
+#      print("Rotation")
+# else:
+#     print("Not Rotation")
 
 # the longest common prefix
 
@@ -509,3 +509,9 @@ else:
 #        prefix = prefix[:-1]
 
 # print(prefix)  
+
+# he second-largest distinct element without sort()
+
+nums = [10, 5, 20, 8, 15]
+
+first = second = float('-inf')
