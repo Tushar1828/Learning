@@ -520,3 +520,9 @@ for n in nums:
     if n > first:
         second = first
         first = n
+
+    elif first > n > second:
+        second = n
+
+if second == float('-inf'):
+    print("No second-largest element")
